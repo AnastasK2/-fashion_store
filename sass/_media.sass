@@ -14,8 +14,38 @@
   .container
     max-width: 672px
   .header
-    &-menu
+    &--mobile
+      &--fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__block
       display: none
+      &--visible
+        display: block
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        top: 70px
+        background-color: #fff
+    &-menu
+      flex-direction: column
+      background-color: $light
+      &__link
+        margin-bottom: 30px
+        font-size: 16px
+        &--mobile
+          &--visible
+            display: block
+      &__button
+        font-size: 16px
+        margin-bottom: 60px
+        &--mobile
+          &--visible
+            display: block
   .menu
     &-button
       width: 16px
@@ -33,6 +63,7 @@
         height: 1px
         background-color: $primary
   .mainpage
+    margin-top: 110px
     &--bg
       width: 728px
       margin: auto
@@ -71,9 +102,13 @@
   .container
     max-width: 540px
   .mainpage
-    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%)
+    // position: relative
+    z-index: 3
+    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 49.32%, #E8EAE9 65.51%)
     &--bg
       width: 100%
+      // position: absolute
+      z-index: 0
     &__title
       width: 100%
       font-size: 32px

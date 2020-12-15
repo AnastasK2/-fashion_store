@@ -16,14 +16,41 @@
       <div class="container">
         <div class="header-wrapper">
           <img src="img/Logo.png" alt="Icon: Logo" class="logo header__logo" />
-          <nav class="header-menu">
-            <a href="#" class="header-menu__link">Главная</a>
-            <a href="#" class="header-menu__link">Новинки</a>
-            <a href="#" class="header-menu__link">Тренды</a>
-            <a href="#" class="header-menu__link">Отзывы</a>
-            <a href="#" class="header-menu__link">Контакты</a>
-            <button class="button header-menu__button">Войти</button>
-          </nav>
+          <div class="header__block">
+            <nav class="header-menu header-menu__mobile--visible">
+              <a
+                href="#"
+                class="header-menu__link header-menu__link--mobile--visible"
+                >Главная</a
+              >
+              <a
+                href="#"
+                class="header-menu__link header-menu__link--mobile--visible"
+                >Новинки</a
+              >
+              <a
+                href="#"
+                class="header-menu__link header-menu__link--mobile--visible"
+                >Тренды</a
+              >
+              <a
+                href="#"
+                class="header-menu__link header-menu__link--mobile--visible"
+                >Отзывы</a
+              >
+              <a
+                href="#"
+                class="header-menu__link header-menu__link--mobile--visible"
+                >Контакты</a
+              >
+              <button
+                class="button header-menu__button header-menu__button--mobile--visible"
+              >
+                Войти
+              </button>
+            </nav>
+          </div>
+          <!-- /.header__block -->
           <button class="menu-button header__menu-button">
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
@@ -85,5 +112,6 @@
       </div>
       <!-- /.mainpage--bg -->
     </section>
+    <script src="js/main.js"></script>
   </body>
 </html>
