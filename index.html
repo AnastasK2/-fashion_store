@@ -15,9 +15,15 @@
     <header class="header header--mobile--fixed">
       <div class="container">
         <div class="header-wrapper">
-          <img src="img/Logo.png" alt="Icon: Logo" class="logo header__logo" />
+          <a href="index.html" class="logo">
+            <img
+              src="img/Logo.png"
+              alt="Icon: Logo"
+              class="logo header__logo"
+            />
+          </a>
           <div class="header__block">
-            <nav class="header-menu header-menu__mobile--visible">
+            <nav class="header-menu header-menu--mobile--visible">
               <a
                 href="#"
                 class="header-menu__link header-menu__link--mobile--visible"
@@ -44,6 +50,7 @@
                 >Контакты</a
               >
               <button
+                data-toggle="modal"
                 class="button header-menu__button header-menu__button--mobile--visible"
               >
                 Войти
@@ -62,7 +69,7 @@
       <!-- /.container -->
     </header>
     <section class="mainpage">
-      <div class="mainpage--bg">
+      <div class="mainpage__bg">
         <div class="container">
           <div class="mainpage-info">
             <button class="mainpage-info__text mainpage-info__text--green">
@@ -110,8 +117,74 @@
         </div>
         <!-- /.container -->
       </div>
-      <!-- /.mainpage--bg -->
+      <!-- /.mainpage__bg -->
     </section>
+    <section class="infornation">
+      <div class="container">
+        <div class="information-wrapper">
+          <div class="information__images"></div>
+          <div class="information__info">
+            <h2 class="information__title">Новая зимняя коллекция</h2>
+            <h3 class="information__subtitle">
+              Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции,
+              нажав кнопку ниже. Успейте купить, пока коллекция есть в наличии.
+              Используйте код EHYA20, чтобы получить 20% скидку.
+            </h3>
+            <a href="#" class="information__link"
+              >Посмотреть коллекцию
+              <img src="img/IconInfoNext.png" alt="Icon: Arrow next"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container"></div>
+    </section>
+    <section class="reviews">
+      <div class="container"></div>
+    </section>
+    <section class="history">
+      <div class="container"></div>
+    </section>
+    <section class="subscribe">
+      <div class="container"></div>
+    </section>
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.png" alt="Icon: close" class="modal__image-close"
+        /></a>
+        <h3 class="modal__title">ВХОД</h3>
+        <form action="sendModal.php" method="POST" class="modal__form">
+          <input
+            type="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            class="input modal__input"
+            placeholder="Ваша почта"
+            name="mail"
+            required
+          />
+          <input
+            type="tel"
+            class="input modal__input phone"
+            placeholder="Password"
+            name="pass"
+            minlength="17"
+            required
+          />
+          <button class="button modal__button">Войти</button>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
