@@ -7,9 +7,17 @@
       &__link, &__button
         font-size: 14px
   .mainpage
+    margin-bottom: 80px
     &-info
       &__labels
         width: 60%
+  .information
+    &-grid
+      flex-direction: column
+      &__info
+        margin-top: 40px
+      &__subtitle
+        text-align: left
 @media ( max-width: 992px )
   .container
     max-width: 672px
@@ -82,7 +90,6 @@
         line-height: 32px
       &__labels
         width: 444px
-
 @media ( max-width: 767px)
   .container
     max-width: 600px
@@ -109,11 +116,17 @@
     &__title
       font-size: 40px
       line-height: 42px
+  .information
+    &-grid
+      &__first
+        margin-right: 20px
+      &__item
+        width: 100%
 @media ( max-width: 576px)
   .container
     max-width: 540px
   .mainpage
-    // position: relative
+    margin-bottom: 60px
     z-index: 3
     background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 49.32%, #E8EAE9 65.51%)
     &__bg
@@ -141,6 +154,42 @@
       padding: 10px 30px
     &__button
       margin-top: 15px
+  .information
+    &__images
+      flex-direction: column
+      align-items: center
+      vertical-align: center
+      justify-content: center
+    &-grid
+      align-items: center
+      &__first
+        margin-right: 0
+      &__items
+        flex-direction: row
+        margin-top: 14px
+        // width: 50%
+        justify-content: space-between
+        margin-right: 0
+      &__item
+        &--large
+          width: 290px
+          height: 300px
+          object-fit: cover
+        &--small
+          width: 138px
+          height: 100px
+          margin-right: 14px
+      &__item:last-child
+        margin-right: 0
+      &__info
+        text-align: center
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__subtitle
+        font-size: 16px
+        line-height: 28px
+        text-align: center
 @media (min-width: 320px) and (max-width: 420px)
   .container
     width: 85%
@@ -186,14 +235,23 @@
         &--green
           margin-top: 25px
           margin-bottom: 20px
-.modal
-  &__dialog
-    width: 85%
-    padding: 10px 15px
-    &__title
-      font-size: 36px
-      line-height: 40px
-    &__input
-      padding: 10px 30px
-    &__button
-      margin-top: 15px
+  .modal
+    &__dialog
+      width: 85%
+      padding: 10px 15px
+      &__title
+        font-size: 36px
+        line-height: 40px
+      &__input
+        padding: 10px 30px
+      &__button
+        margin-top: 15px
+  .information
+    &-grid
+      &__item
+        border-radius: 0
+      &__link
+        font-size: 16px
+        line-height: 22px
+        &--image
+          margin-left: 5px
