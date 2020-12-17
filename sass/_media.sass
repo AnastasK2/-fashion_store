@@ -18,6 +18,21 @@
         margin-top: 40px
       &__subtitle
         text-align: left
+  .history
+    &-container
+      flex-direction: column
+    &__info
+      width: 100%
+      text-align: center
+    &__title
+      width: 100%
+    &__text
+      width: 568px
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+    &__buttons
+      margin-bottom: 36px
 @media ( max-width: 992px )
   .container
     max-width: 672px
@@ -190,7 +205,33 @@
     &__author
       font-size: 19px
       line-height: 22px
-
+  .history
+    &-card
+      width: 270px
+      height: 475px
+      // margin-right: 5px
+    // &__image
+    //   width: 200px
+    // &__img
+    //   width: 100%
+    &__info
+      padding: 10px 10px
+    &__title
+      font-size: 20px
+      line-height: 30px
+    &__link
+      font-size: 15px
+      line-height: 22px
+  .swiper
+    // &-wrapper
+    //   &__history
+    //     flex-direction: column
+  //       justify-content: none
+        // width: 90%
+        // height: 475px
+    &-slide
+      &__history
+        flex-direction: column
 @media ( max-width: 576px)
   .container
     max-width: 540px

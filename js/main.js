@@ -19,7 +19,21 @@ var mySwiper = new Swiper('.reviews-slider', {
 
 })
 
+var historySwiper = new Swiper('.history-slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  // loop: true,
+  navigation: {
+    nextEl: '.history__button--next',
+    prevEl: '.history__button--prev',
+  },
+  
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
 
+})
 
 
 var modalButton = $('[data-toggle=modal]');
