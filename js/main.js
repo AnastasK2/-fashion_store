@@ -54,4 +54,15 @@ function closeModal (event){
   modalOverlay.removeClass('modal__overlay--visible');
   modalDialog.removeClass('modal__dialog--visible');
 }
-
+//обработка формы
+$(".form").each(function (){
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      mail: {
+        required: "Пожалуйста, введите адрес электронной почты",
+        mail: "Ваша почта должна быть в виде name@domain.com"
+      },
+    },
+  });
+});
