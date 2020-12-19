@@ -21,7 +21,8 @@
 
 * .container {
   max-width: 1280px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   overflow: hidden;
 }
 
@@ -435,8 +436,11 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .header-menu__button {
@@ -449,12 +453,17 @@ template {
   cursor: pointer;
 }
 
+.header-menu__button:hover {
+  -webkit-box-shadow: 0 0 0 2px #1565D8 inset, 0 0 0 4px #ffffff inset;
+          box-shadow: 0 0 0 2px #1565D8 inset, 0 0 0 4px #ffffff inset;
+}
+
 .header-menu__link {
   text-decoration: none;
   color: #183B56;
   font-size: 16px;
   line-height: 22px;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .header-menu__link:hover {
@@ -487,7 +496,9 @@ template {
 }
 
 .mainpage-info {
-  padding: 62px 0 46px;
+  padding-bottom: 46px;
+  padding-top: 62px;
+  padding-left: 107px;
 }
 
 .mainpage-info--thankyou {
@@ -515,12 +526,22 @@ template {
 }
 
 .mainpage-info__button {
-  padding: 15px 40px;
+  padding: 15px 43px;
   color: #ffffff;
   background-color: #183B56;
   border: none;
   cursor: pointer;
-  margin-bottom: 49px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 45px;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.mainpage-info__button:hover {
+  -webkit-box-shadow: 0 0 0 2px #183B56 inset, 0 0 0 4px #ffffff inset;
+          box-shadow: 0 0 0 2px #183B56 inset, 0 0 0 4px #ffffff inset;
 }
 
 .mainpage-info__labels {
@@ -651,6 +672,8 @@ template {
 
 .information {
   margin-bottom: 145px;
+  margin-right: auto;
+  margin-top: auto;
 }
 
 .information__images {
@@ -709,19 +732,22 @@ template {
   font-size: 48px;
   line-height: 60px;
   margin: 0;
-  margin-bottom: 24px;
+  margin-top: 5px;
+  margin-bottom: 30px;
   padding: 0;
   color: #183B56;
 }
 
 .information-grid__subtitle {
+  width: 400px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 32px;
   padding: 0;
   color: #5A7184;
+  margin-bottom: 40px;
+  text-align: left;
 }
 
 .information-grid__link {
@@ -734,6 +760,12 @@ template {
 
 .information-grid__link__image {
   margin-left: 15px;
+}
+
+.information-grid__link:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #1565D8;
+          text-decoration-color: #1565D8;
 }
 
 .products {
@@ -928,10 +960,13 @@ template {
 }
 
 .swiper-pagination-bullets {
-  margin-top: 20px;
+  bottom: 102px;
 }
 
 .swiper-pagination-bullet {
+  margin-top: 100px;
+  width: 5px;
+  height: 5px;
   background-color: #B3BAC5;
 }
 
@@ -1213,6 +1248,9 @@ template {
     max-width: 900px;
     margin: auto;
   }
+  .header {
+    padding: 35px 0;
+  }
   .header-menu__link, .header-menu__button {
     font-size: 14px;
   }
@@ -1317,6 +1355,9 @@ template {
   .container {
     max-width: 672px;
   }
+  .header__logo {
+    margin-left: 11px;
+  }
   .header--mobile--fixed {
     position: fixed;
     left: 0;
@@ -1342,6 +1383,12 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #ffffff;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 20px;
+    padding-left: 18%;
+    padding-right: 50%;
   }
   .header-menu__link {
     margin-bottom: 30px;
@@ -1356,13 +1403,14 @@ template {
   .header-menu__button {
     font-size: 16px;
     margin-bottom: 60px;
+    width: 100%;
   }
   .header-menu__button--mobile--visible {
     display: block;
   }
   .menu-button {
-    width: 16px;
-    height: 11px;
+    width: 27px;
+    height: 20px;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1380,11 +1428,13 @@ template {
     border: none;
     background-color: #ffffff;
     cursor: pointer;
+    margin-right: 12px;
   }
   .menu-button__line {
-    width: 16px;
-    height: 1px;
+    width: 20px;
+    height: 2px;
     background-color: #183B56;
+    margin-bottom: 4px;
   }
   .mainpage {
     margin-top: 110px;
@@ -1401,11 +1451,13 @@ template {
   .mainpage-info__title {
     font-size: 48px;
     line-height: 60px;
+    margin-bottom: 18px;
   }
   .mainpage-info__subtitle {
     width: 400px;
     font-size: 18px;
     line-height: 32px;
+    margin-bottom: 35px;
   }
   .mainpage-info__labels {
     width: 444px;
@@ -1652,6 +1704,10 @@ template {
   .container {
     max-width: 540px;
   }
+  .header-menu {
+    padding-left: 10%;
+    padding-right: 40%;
+  }
   .mainpage {
     margin-bottom: 60px;
     z-index: 3;
@@ -1761,10 +1817,13 @@ template {
 
 @media (min-width: 320px) and (max-width: 420px) {
   .container {
-    width: 85%;
+    width: 92%;
   }
   .header {
     margin-bottom: 24px;
+  }
+  .header-menu {
+    padding-right: 30%;
   }
   .mainpage {
     width: 100%;
@@ -1785,7 +1844,7 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 310px;
+    margin-top: 337px;
   }
   .mainpage-info__title {
     width: 100%;
@@ -1818,11 +1877,18 @@ template {
     vertical-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    padding: 12px 43px;
+    font-size: 16px;
+    line-height: 22px;
+    width: 90%;
   }
   .mainpage-info__text--green {
     margin-top: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+  }
+  .button-green {
+    margin-bottom: 18px;
   }
   .modal__dialog {
     width: 85%;

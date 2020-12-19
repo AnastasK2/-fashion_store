@@ -3,6 +3,7 @@
     max-width: 900px
     margin: auto
   .header
+    padding: 35px 0
     &-menu
       &__link, &__button
         font-size: 14px
@@ -73,6 +74,8 @@
   .container
     max-width: 672px
   .header
+    &__logo
+      margin-left: 11px
     &--mobile
       &--fixed
         position: fixed
@@ -93,6 +96,10 @@
     &-menu
       flex-direction: column
       background-color: $light
+      align-items: flex-start
+      padding-top: 20px
+      padding-left: 18%
+      padding-right: 50%
       &__link
         margin-bottom: 30px
         font-size: 16px
@@ -104,13 +111,14 @@
       &__button
         font-size: 16px
         margin-bottom: 60px
+        width: 100%
         &--mobile
           &--visible
             display: block
   .menu
     &-button
-      width: 16px
-      height: 11px
+      width: 27px
+      height: 20px
       padding: 0
       display: flex
       align-items: center
@@ -119,10 +127,12 @@
       border: none
       background-color: $light
       cursor: pointer
+      margin-right: 12px
       &__line
-        width: 16px
-        height: 1px
+        width: 20px
+        height: 2px
         background-color: $primary
+        margin-bottom: 4px
   .mainpage
     margin-top: 110px
     &__bg
@@ -135,10 +145,12 @@
       &__title
         font-size: 48px
         line-height: 60px
+        margin-bottom: 18px
       &__subtitle
         width: 400px
         font-size: 18px
         line-height: 32px
+        margin-bottom: 35px
       &__labels
         width: 444px
   .products
@@ -324,6 +336,10 @@
 @media ( max-width: 576px)
   .container
     max-width: 540px
+  .header
+    &-menu
+      padding-left: 10%
+      padding-right: 40%
   .mainpage
     margin-bottom: 60px
     z-index: 3
@@ -400,9 +416,11 @@
       margin-right: 5px
 @media (min-width: 320px) and (max-width: 420px)
   .container
-    width: 85%
+    width: 92%
   .header
     margin-bottom: 24px
+    &-menu
+      padding-right: 30%
   .mainpage
     width: 100%
     &__bg
@@ -412,7 +430,7 @@
       flex-direction: column
       align-content: center
       align-items: center
-      margin-top: 310px
+      margin-top: 337px
       &__title
         width: 100%
         font-size: 32px
@@ -438,11 +456,18 @@
         vertical-align: center
         margin-left: auto
         margin-right: auto
-        margin-bottom: 15px
+        margin-bottom: 18px
+        padding: 12px 43px
+        font-size: 16px
+        line-height: 22px
+        width: 90%
       &__text
         &--green
           margin-top: 25px
-          margin-bottom: 20px
+          margin-bottom: 15px
+  .button
+    &-green
+      margin-bottom: 18px
   .modal
     &__dialog
       width: 85%

@@ -1,5 +1,7 @@
 .information
   margin-bottom: 145px
+  margin-right: auto
+  margin-top: auto
   &__images
     display: flex
     justify-content: space-between
@@ -26,17 +28,20 @@
       font-size: 48px
       line-height: 60px
       margin: 0
-      margin-bottom: 24px
+      margin-top: 5px
+      margin-bottom: 30px
       padding: 0
       color: $primary
     &__subtitle
+      width: 400px
       font-size: 20px
       line-height: 36px
       font-weight: 400
       margin: 0
-      margin-bottom: 32px
       padding: 0
       color: $text
+      margin-bottom: 40px
+      text-align: left
     &__link
       font-weight: 600
       font-size: 18px
@@ -45,3 +50,6 @@
       text-decoration: none
       &__image
         margin-left: 15px
+    &__link:hover
+      text-decoration: underline
+      text-decoration-color: $secondary

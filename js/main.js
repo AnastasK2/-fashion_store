@@ -7,8 +7,9 @@ menuButton.addEventListener('click', function () {
 var mySwiper = new Swiper('.reviews-slider', {
   // Optional parameters
   direction: 'horizontal',
-  // loop: true,
-
+  loop: true,
+  autoplay: true,
+  disableOnInteraction: false,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',

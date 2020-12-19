@@ -95,7 +95,7 @@
                   alt="Icon"
                   class="mainpage-info__icon"
                 />
-                <span class="mainpage-info__text">Оплата онлайн</span>
+                <span class="mainpage-info__text">Онлайн оплата</span>
               </div>
               <div class="mainpage-info__item">
                 <img
@@ -526,34 +526,36 @@
       </div>
     </footer>
     <div class="modal">
-      <div class="modal__overlay"></div>
-      <!-- /.modal__overlay -->
-      <div class="modal__dialog">
-        <a href="#" class="modal__close">
-          <img src="img/close.png" alt="Icon: close" class="modal__image-close"
-        /></a>
-        <h3 class="modal__title">ВХОД</h3>
-        <form action="sendModal.php" method="POST" class="modal__form">
-          <input
-            type="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            class="input modal__input"
-            placeholder="Ваша почта"
-            name="mail"
-            required
-          />
-          <input
-            type="password"
-            class="input modal__input phone"
-            placeholder="Password"
-            name="pass"
-            minlength="17"
-            required
-          />
-          <button class="button modal__button">Войти</button>
-        </form>
+      
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+          <a href="#" class="modal__close">
+            <img src="img/close.png" alt="Icon: close" class="modal__image-close"
+          /></a>
+          <h3 class="modal__title">ВХОД</h3>
+          <form action="sendModal.php" method="POST" class="modal__form">
+            <input
+              type="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              class="input modal__input"
+              placeholder="Ваша почта"
+              name="mail"
+              required
+            />
+            <input
+              type="password"
+              class="input modal__input phone"
+              placeholder="Password"
+              name="pass"
+              minlength="17"
+              required
+            />
+            <button class="button modal__button">Войти</button>
+          </form>
+        </div>
+        <!-- /.modal__dialog -->
       </div>
-      <!-- /.modal__dialog -->
     </div>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

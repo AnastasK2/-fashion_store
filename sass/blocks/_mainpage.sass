@@ -12,7 +12,10 @@
     border-radius: 8px
     overflow: hidden
   &-info
-    padding: 62px 0 46px
+    padding-bottom: 46px
+    padding-top: 62px
+    padding-left: 107px
+
     &--thankyou
       padding: 0
     &__title
@@ -34,12 +37,18 @@
       color: $text
       margin-bottom: 53px
     &__button
-      padding: 15px 40px
+      padding: 15px 43px
       color: $light
       background-color: $primary
       border: none
       cursor: pointer
-      margin-bottom: 49px
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      margin-bottom: 45px
+      transition: .2s linear
+    &__button:hover
+      box-shadow: 0 0 0 2px $primary inset, 0 0 0 4px $light inset
     &__labels
       width: 40%
       display: flex
