@@ -4,12 +4,15 @@
     display: flex
     align-items: center
     justify-content: space-between
+    margin-bottom: 48px
   &__wrapper
     width: 100%
-    display: flex
+    display: grid
     align-items: center
     flex-wrap: wrap
     justify-content: space-between
+    &--best
+      justify-content: space-evenly
   &__list
     display: flex
     align-items: center
@@ -20,7 +23,12 @@
     font-size: 18px
     line-height: 25px
     color: $text
-  &__item:first-child
+    border: none
+    background-color: transparent
+  &__item:hover
+    text-decoration: underline
+    text-decoration-color: $text
+  &__item:focus
     font-weight: bold
     font-size: 18px
     line-height: 25px
@@ -37,13 +45,66 @@
 .card
   width: 260px
   height: 441px
-  margin-right: 20px
+  // margin-right: 20px
   margin-bottom: 50px
   cursor: pointer
-  &:last-child
-    margin-right: 0
-  &:nth-child(4)
-    margin-right: 0
+  &__new
+    &--one
+      grid-row: 1
+      grid-column: 1
+    &--two
+      grid-row: 1
+      grid-column: 2
+    &--tree
+      grid-row: 1
+      grid-column: 3
+    &--four
+      grid-row: 1
+      grid-column: 4
+    &--five
+      grid-row: 2
+      grid-column: 1
+    &--six
+      grid-row: 2
+      grid-column: 2
+    &--seven
+      grid-row: 2
+      grid-column: 3
+    &--eight
+      grid-row: 2
+      grid-column: 4
+  &__best
+    &--one
+      grid-row: 1
+      grid-column: 1
+    &--two
+      grid-row: 1
+      grid-column: 2
+    &--three
+      grid-row: 1
+      grid-column: 3
+    &--four
+      grid-row: 2
+      grid-column: 1
+    &--five
+      grid-row: 2
+      grid-column: 2
+    &--eight
+      grid-row: 2
+      grid-column: 3
+  &__soon
+    &--five
+      grid-row: 1
+      grid-column: 1
+    &--six
+      grid-row: 1
+      grid-column: 2
+    &--seven
+      grid-row: 1
+      grid-column: 3
+    &--eight
+      grid-row: 1
+      grid-column: 4
   &__image
     border-radius: 8px
     overflow: hidden
@@ -84,3 +145,5 @@
       line-height: 37px
       margin: 0
       padding: 0
+.tabcontent
+  display: none

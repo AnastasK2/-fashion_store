@@ -174,148 +174,324 @@
       <div class="container">
         <div class="products__header">
           <h2 class="products__title">Тренды</h2>
-          <div class="products__list">
-            <a href="#" class="products__item">Новинки</a>
-            <a href="#" class="products__item">Лучшее</a>
-            <a href="#" class="products__item">Скоро</a>
+          <div class="products__list tab">
+           <button class="products__item tablinks" onclick="openCity(event, 'New')" id="defaultOpen">Новинки</button>
+           <button class="products__item tablinks" onclick="openCity(event, 'Best')">Лучшее</button> 
+           <button class="products__item tablinks" onclick="openCity(event, 'Soon')">Скоро</button>
           </div>
         </div>
         <!-- /.products__header -->
-        <div class="products__wrapper">
-          <div class="card">
-            <div class="card__image">
-              <img src="img/prod1.jpg" alt="" class="card__img" />
-            </div>
-            <div class="card__info">
-              <h4 class="card__title">Minimalist Style</h4>
-              <div class="card__info__bottom">
-                <span class="card__price">$25.7 </span
-                ><img
-                  src="img/shopping-cart.png"
-                  alt="Icon: shopping basket"
-                  class="card__icon"
-                />
+        
+          <div id="New" class="tabcontent">
+            <div class="products__wrapper products__wrapper--new">
+              <div class="card card__new card__new--one">
+                <div class="card__image">
+                  <img src="img/prod1.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Minimalist Style</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$25.7 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
               </div>
-            </div>
-            <!-- /.card__info -->
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <div class="card__image">
-              <img src="img/prod2.jpg" alt="" class="card__img" />
-            </div>
-            <div class="card__info">
-              <h4 class="card__title">Luxury Gown</h4>
-              <div class="card__info__bottom">
-                <span class="card__price">$30.6 </span
-                ><img
-                  src="img/shopping-cart.png"
-                  alt="Icon: shopping basket"
-                  class="card__icon"
-                />
+              <!-- /.card -->
+              <div class="card card__new card__new--two">
+                <div class="card__image">
+                  <img src="img/prod2.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Luxury Gown</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$30.6 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
               </div>
-            </div>
-            <!-- /.card__info -->
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <div class="card__image">
-              <img src="img/prod3.jpg" alt="" class="card__img" />
-            </div>
-            <div class="card__info">
-              <h4 class="card__title">Full Coloristy</h4>
-              <div class="card__info__bottom">
-                <span class="card__price">$25.7 </span
-                ><img
-                  src="img/shopping-cart.png"
-                  alt="Icon: shopping basket"
-                  class="card__icon"
-                />
+              <!-- /.card -->
+              <div class="card card__new card__new--three">
+                <div class="card__image">
+                  <img src="img/prod3.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Full Coloristy</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$25.7 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
               </div>
-            </div>
-            <!-- /.card__info -->
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <div class="card__image">
-              <img src="img/prod4.jpg" alt="" class="card__img" />
-            </div>
-            <div class="card__info">
-              <h4 class="card__title">Pinky Winky</h4>
-              <div class="card__info__bottom">
-                <span class="card__price">$109 </span
-                ><img
-                  src="img/shopping-cart.png"
-                  alt="Icon: shopping basket"
-                  class="card__icon"
-                />
+              <!-- /.card -->
+              <div class="card card__new card__new--four">
+                <div class="card__image">
+                  <img src="img/prod4.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Pinky Winky</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$109 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
               </div>
-            </div>
-            <!-- /.card__info -->
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <div class="card__image">
-              <img src="img/prod5.jpg" alt="" class="card__img" />
-            </div>
-            <div class="card__info">
-              <h4 class="card__title">Holiday Vibes</h4>
-              <div class="card__info__bottom">
-                <span class="card__price">$51.2 </span
-                ><img
-                  src="img/shopping-cart.png"
-                  alt="Icon: shopping basket"
-                  class="card__icon"
-                />
+              <!-- /.card -->
+              <div class="card card__new card__new--five">
+                <div class="card__image">
+                  <img src="img/prod5.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Holiday Vibes</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$51.2 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
               </div>
-            </div>
-            <!-- /.card__info -->
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <div class="card__image">
-              <img src="img/prod6.jpg" alt="" class="card__img" />
-            </div>
-            <div class="card__info">
-              <h4 class="card__title">Swaggie Shaggy</h4>
-              <div class="card__info__bottom">
-                <span class="card__price">$81.3</span
-                ><img
-                  src="img/shopping-cart.png"
-                  alt="Icon: shopping basket"
-                  class="card__icon"
-                />
+              <!-- /.card -->
+              <div class="card card__new card__new--six">
+                <div class="card__image">
+                  <img src="img/prod6.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Swaggie Shaggy</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$81.3</span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
               </div>
-            </div>
-            <!-- /.card__info -->
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <div class="card__image">
-              <img src="img/prod7.jpg" alt="" class="card__img" />
-            </div>
-            <div class="card__info">
-              <h4 class="card__title">Red Formal</h4>
-              <div class="card__info__bottom">
-                <span class="card__price">$66.8 </span
-                ><img
-                  src="img/shopping-cart.png"
-                  alt="Icon: shopping basket"
-                  class="card__icon"
-                />
+              <!-- /.card -->
+              <div class="card card__new card__new--seven">
+                <div class="card__image">
+                  <img src="img/prod7.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Red Formal</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$66.8 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
               </div>
+              <!-- /.card -->
+              <div class="card card__new card__new--eight">
+                <div class="card__info__more">
+                  <h4 class="card__icon__more">+</h4>
+                  <h4 class="card__title__more">Смотреть больше коллекций</h4>
+                </div>
+              </div>
+              <!-- /.card -->
             </div>
-            <!-- /.card__info -->
+            <!-- /.products__wrapper -->
           </div>
-          <!-- /.card -->
-          <div class="card">
-            <div class="card__info__more">
-              <h4 class="card__icon__more">+</h4>
-              <h4 class="card__title__more">Смотреть больше коллекций</h4>
+          <!-- /.tabcontent -->
+          <div id="Best" class="tabcontent tabcontent__best">
+            <div class="products__wrapper products__wrapper--best">
+              <div class="card card__best card__best--one">
+                <div class="card__image">
+                  <img src="img/prod1.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Minimalist Style</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$25.7 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
+              </div>
+              <!-- /.card -->
+              <div class="card card__best card__best--two">
+                <div class="card__image">
+                  <img src="img/prod2.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Luxury Gown</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$30.6 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
+              </div>
+              <!-- /.card -->
+              <div class="card card__best card__best--three">
+                <div class="card__image">
+                  <img src="img/prod3.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Full Coloristy</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$25.7 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
+              </div>
+              <!-- /.card -->
+              <div class="card card__best card__best--four">
+                <div class="card__image">
+                  <img src="img/prod4.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Pinky Winky</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$109 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
+              </div>
+              <!-- /.card -->
+              <div class="card card__best card__best--five">
+                <div class="card__image">
+                  <img src="img/prod5.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Holiday Vibes</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$51.2 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
+              </div>
+              <!-- /.card -->
+
+              <div class="card card__best card__best--eight">
+                <div class="card__info__more">
+                  <h4 class="card__icon__more">+</h4>
+                  <h4 class="card__title__more">Смотреть больше коллекций</h4>
+                </div>
+              </div>
+              <!-- /.card -->
             </div>
+            <!-- /.products__wrapper -->
           </div>
-          <!-- /.card -->
-        </div>
+<!-- /.tabcontent -->
+          <div id="Soon" class="tabcontent">
+            <div class="products__wrapper products__wrapper--soon">
+              <div class="card card__soon card__soon--five">
+                <div class="card__image">
+                  <img src="img/prod5.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Holiday Vibes</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$51.2 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
+              </div>
+              <!-- /.card -->
+              <div class="card card__soon card__soon--six">
+                <div class="card__image">
+                  <img src="img/prod6.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Swaggie Shaggy</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$81.3</span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
+              </div>
+              <!-- /.card -->
+              <div class="card card__soon card__soon--seven">
+                <div class="card__image">
+                  <img src="img/prod7.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h4 class="card__title">Red Formal</h4>
+                  <div class="card__info__bottom">
+                    <span class="card__price">$66.8 </span
+                    ><img
+                      src="img/shopping-cart.png"
+                      alt="Icon: shopping basket"
+                      class="card__icon"
+                    />
+                  </div>
+                </div>
+                <!-- /.card__info -->
+              </div>
+  
+              <div class="card card__soon card__soon--eight">
+                <div class="card__info__more">
+                  <h4 class="card__icon__more">+</h4>
+                  <h4 class="card__title__more">Смотреть больше коллекций</h4>
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.products__wrapper -->
+          </div>
+         <!-- /.tabcontent -->
       </div>
     </section>
 
