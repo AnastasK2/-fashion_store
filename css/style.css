@@ -769,7 +769,7 @@ template {
 }
 
 .products {
-  margin-bottom: 145px;
+  margin-bottom: 70px;
 }
 
 .products__header {
@@ -835,6 +835,8 @@ template {
   font-size: 48px;
   line-height: 60px;
   color: #183B56;
+  margin: 0;
+  padding: 0;
 }
 
 .card {
@@ -889,6 +891,8 @@ template {
   font-size: 16px;
   line-height: 20px;
   color: #183B56;
+  margin: 0;
+  padding: 0;
 }
 
 .card__title__more {
@@ -941,7 +945,7 @@ template {
   line-height: 42px;
   color: #183B56;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 45px;
 }
 
 .reviews__author {
@@ -956,18 +960,19 @@ template {
 .reviews__image {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
-.swiper-pagination-bullets {
-  bottom: 102px;
+.swiper-pagination {
+  bottom: 100px;
+  left: 40%;
 }
 
 .swiper-pagination-bullet {
-  margin-top: 100px;
   width: 5px;
   height: 5px;
   background-color: #B3BAC5;
+  margin-right: 15px;
 }
 
 .swiper-pagination-bullet-active {
@@ -1257,6 +1262,9 @@ template {
   .mainpage {
     margin-bottom: 80px;
   }
+  .mainpage-info {
+    padding-left: 0;
+  }
   .mainpage-info__labels {
     width: 60%;
   }
@@ -1265,12 +1273,19 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .information-grid__items {
+    margin-right: 0;
   }
   .information-grid__info {
     margin-top: 40px;
   }
   .information-grid__subtitle {
     text-align: left;
+    width: 100%;
   }
   .history-container {
     -webkit-box-orient: vertical;
@@ -1462,8 +1477,17 @@ template {
   .mainpage-info__labels {
     width: 444px;
   }
-  .products {
+  .information {
     margin-bottom: 80px;
+  }
+  .information-grid__info {
+    margin-top: 20px;
+  }
+  .information-grid__subtitle {
+    margin-bottom: 20px;
+  }
+  .products {
+    margin-bottom: 40px;
   }
   .products__header {
     -webkit-box-pack: center;
@@ -1623,6 +1647,9 @@ template {
     font-size: 19px;
     line-height: 22px;
   }
+  .swiper-pagination {
+    bottom: 0;
+  }
   .history-card {
     width: 270px;
     height: 475px;
@@ -1709,7 +1736,7 @@ template {
     padding-right: 40%;
   }
   .mainpage {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     z-index: 3;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(49.32%, rgba(238, 238, 238, 0.0001)), color-stop(65.51%, #E8EAE9));
     background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 49.32%, #E8EAE9 65.51%);
@@ -1904,6 +1931,12 @@ template {
   .modal__dialog__button {
     margin-top: 15px;
   }
+  .information {
+    margin-bottom: 90px;
+  }
+  .information__images {
+    margin-bottom: 10px;
+  }
   .information-grid__item {
     border-radius: 0;
   }
@@ -1913,6 +1946,9 @@ template {
   }
   .information-grid__link--image {
     margin-left: 5px;
+  }
+  .information-grid__title {
+    margin-bottom: 20px;
   }
   .products {
     margin-bottom: 48px;
@@ -1932,6 +1968,7 @@ template {
   .card {
     width: 130px;
     margin-right: 5px;
+    margin-bottom: 0;
   }
   .card__icon {
     width: 16px;
@@ -1941,13 +1978,20 @@ template {
     width: 130px;
     padding: 20% 10px;
   }
-}
-
-.reviews__text {
-  line-height: 36px;
-}
-
-.reviews__author {
-  margin-bottom: 48px;
+  .reviews__text {
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  .reviews__author {
+    margin-bottom: 48px;
+  }
+  .reviews__image {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 0;
+  }
+  .swiper-pagination {
+    bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

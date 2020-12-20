@@ -10,15 +10,21 @@
   .mainpage
     margin-bottom: 80px
     &-info
+      padding-left: 0
+    &-info
       &__labels
         width: 60%
   .information
     &-grid
       flex-direction: column
+      align-items: center
+      &__items
+        margin-right: 0
       &__info
         margin-top: 40px
       &__subtitle
         text-align: left
+        width: 100%
   .history
     &-container
       flex-direction: column
@@ -153,8 +159,15 @@
         margin-bottom: 35px
       &__labels
         width: 444px
-  .products
+  .information
     margin-bottom: 80px
+    &-grid
+      &__info
+        margin-top: 20px
+      &__subtitle
+        margin-bottom: 20px
+  .products
+    margin-bottom: 40px
     &__header
       justify-content: center
       flex-wrap: wrap
@@ -276,6 +289,9 @@
     &__author
       font-size: 19px
       line-height: 22px
+  .swiper
+    &-pagination
+      bottom: 0
   .history
     &-card
       width: 270px
@@ -341,7 +357,7 @@
       padding-left: 10%
       padding-right: 40%
   .mainpage
-    margin-bottom: 60px
+    margin-bottom: 70px
     z-index: 3
     background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 49.32%, #E8EAE9 65.51%)
     &__bg
@@ -480,6 +496,9 @@
       &__button
         margin-top: 15px
   .information
+    margin-bottom: 90px
+    &__images
+      margin-bottom: 10px
     &-grid
       &__item
         border-radius: 0
@@ -488,6 +507,8 @@
         line-height: 22px
         &--image
           margin-left: 5px
+      &__title
+        margin-bottom: 20px
   .products
     margin-bottom: 48px
     &__header
@@ -502,7 +523,7 @@
   .card
     width: 130px
     margin-right: 5px
-      // margin-bottom: 20px
+    margin-bottom: 0
     &__icon
       width: 16px
       height: 16px
@@ -510,8 +531,17 @@
       &__more
         width: 130px
         padding: 20% 10px
-.reviews
-  &__text
-    line-height: 36px
-  &__author
-    margin-bottom: 48px
+
+  .reviews
+    &__text
+      line-height: 36px
+      margin-bottom: 10px
+    &__author
+      margin-bottom: 48px
+    &__image
+      width: 65px
+      height: 65px
+      margin-bottom: 0
+  .swiper
+    &-pagination
+      bottom: 0

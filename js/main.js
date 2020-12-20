@@ -10,10 +10,12 @@ var mySwiper = new Swiper('.reviews-slider', {
   loop: true,
   autoplay: true,
   disableOnInteraction: false,
+  
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
     clickable: true,
+    modifierClass: 'swiper-pagination',
     bulletClass: 'swiper-pagination-bullet',
     bulletActiveClass: 'swiper-pagination-bullet-active',
   },
