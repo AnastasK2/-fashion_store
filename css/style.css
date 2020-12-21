@@ -1,12 +1,17 @@
 @font-face {
-  font-family: "HK Grotesk", sans-serif;
-  src: url("../fonts/hkgrotesk-bold-web.woff2");
-  src: url("../fonts/hkgrotesk-bold-web.woff");
-  src: url("../fonts/hkgrotesk-bold-web.ttf");
-  src: url("../fonts/hkgrotesk-bold-web.svg");
-  src: url("../fonts/hkgrotesk-bold-web.eof");
+  font-family: 'HK Grotesk';
+  src: url("../fonts/HKGrotesk-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url("../fonts/HKGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
 }
 
 * {
@@ -32,6 +37,7 @@
 }
 
 * .button-green {
+  font-weight: 600;
   color: #36B37E;
   background: rgba(54, 179, 126, 0.1);
   border-radius: 2000px;
@@ -508,6 +514,7 @@ template {
 }
 
 .mainpage-info__title {
+  font-family: HK Grotesk;
   padding: 0;
   margin: 0;
   margin-bottom: 28px;
@@ -731,6 +738,8 @@ template {
 }
 
 .information-grid__title {
+  font-family: 'HK Grotesk';
+  font-weight: 700;
   font-size: 48px;
   line-height: 60px;
   margin: 0;
@@ -771,7 +780,7 @@ template {
 }
 
 .products {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 .products__header {
@@ -991,6 +1000,7 @@ template {
 .card__image {
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .card__info {
@@ -1021,14 +1031,19 @@ template {
 
 .card__title {
   font-family: HK Grotesk;
-  font-size: 16px;
-  line-height: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
   color: #183B56;
   margin: 0;
   padding: 0;
 }
 
 .card__title__more {
+  font-family: HK Grotesk;
+  font-weight: 700;
+  font-style: normal;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1056,7 +1071,7 @@ template {
 }
 
 .reviews {
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 }
 
 .reviews__container {
@@ -1078,14 +1093,20 @@ template {
 }
 
 .reviews__text {
+  font-family: HK Grotesk;
+  font-weight: 400;
+  font-style: normal;
   font-size: 20px;
   line-height: 42px;
   color: #183B56;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 
 .reviews__author {
+  font-family: HK Grotesk;
+  font-weight: 700;
+  font-style: normal;
   font-size: 20px;
   line-height: 24px;
   color: #183B56;
@@ -1102,7 +1123,7 @@ template {
 
 .swiper-pagination {
   bottom: 100px;
-  left: 40%;
+  left: 45%;
 }
 
 .swiper-pagination-bullet {
@@ -1124,9 +1145,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1137,7 +1158,9 @@ template {
 }
 
 .history__title {
-  font-weight: bold;
+  font-family: HK Grotesk;
+  font-weight: 700;
+  font-style: normal;
   font-size: 48px;
   line-height: 60px;
   margin: 0;
@@ -1151,7 +1174,9 @@ template {
   font-size: 20px;
   line-height: 36px;
   color: #183B56;
-  margin-bottom: 40px;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 55px;
 }
 
 .history__buttons {
@@ -1167,12 +1192,11 @@ template {
 .history-card {
   width: 322px;
   height: 475px;
-  border-radius: 8px;
   overflow: hidden;
 }
 
 .history-card__image {
-  border-radius: 8px;
+  width: 100%;
 }
 
 .history-card__info {
@@ -1180,6 +1204,9 @@ template {
 }
 
 .history-card__title {
+  font-family: HK Grotesk;
+  font-weight: 500;
+  font-style: normal;
   font-size: 22px;
   line-height: 32px;
   color: #183B56;
@@ -1197,8 +1224,7 @@ template {
 }
 
 .swiper-button-disabled {
-  background-image: url("../img/arrowBPrev.png");
-  background-repeat: no-repeat;
+  display: none;
 }
 
 .swiper-wrapper__history {
@@ -1216,6 +1242,7 @@ template {
 }
 
 .subscribe {
+  height: 340px;
   background-color: #1565D8;
 }
 
@@ -1228,7 +1255,7 @@ template {
 }
 
 .subscribe-container {
-  padding: 40px 150px;
+  padding: 100px 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1248,6 +1275,9 @@ template {
 }
 
 .subscribe__title {
+  font-family: HK Grotesk;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   padding: 0;
   font-size: 48px;
@@ -1265,6 +1295,7 @@ template {
 
 .subscribe-form {
   position: relative;
+  margin-right: 50px;
 }
 
 .subscribe-form__input {
@@ -1274,7 +1305,7 @@ template {
   background-position-y: 23px;
   border: none;
   border-radius: 8px;
-  padding: 18px 48px;
+  padding: 17px 48px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1283,24 +1314,29 @@ template {
 }
 
 .subscribe-form__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
   color: #ffffff;
   background-color: #183B56;
   border: none;
-  padding: 17px 30px;
+  padding: 14px 30px;
   position: absolute;
   z-index: 10;
   right: 2px;
-  top: 2px;
+  top: 1px;
   cursor: pointer;
 }
 
 .footer__grid {
   display: -ms-grid;
   display: grid;
-  padding: 130px 100px;
+  padding: 130px 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-grid-columns: (250px)[5];
+      grid-template-columns: repeat(5, 250px);
 }
 
 .footer__grid--thankyou {
@@ -1325,6 +1361,7 @@ template {
   grid-column: 1;
   justify-self: start;
   width: 263px;
+  margin-left: 20px;
 }
 
 .footer-info__text {
@@ -1353,6 +1390,7 @@ template {
 }
 
 .footer__link {
+  color: #183B56;
   text-decoration: none;
 }
 
@@ -1363,6 +1401,7 @@ template {
 }
 
 .footer__title-links {
+  font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   color: #183B56;
@@ -1376,6 +1415,7 @@ template {
   grid-row: 1;
   -ms-grid-column: 2;
   grid-column: 2;
+  margin-left: 60px;
 }
 
 .footer-services {
@@ -1383,6 +1423,7 @@ template {
   grid-row: 1;
   -ms-grid-column: 3;
   grid-column: 3;
+  margin-left: 10px;
 }
 
 .footer-companies {
@@ -1390,6 +1431,7 @@ template {
   grid-row: 1;
   -ms-grid-column: 4;
   grid-column: 4;
+  margin-left: -50px;
 }
 
 .footer-contacts {
@@ -1397,6 +1439,7 @@ template {
   grid-row: 1;
   -ms-grid-column: 5;
   grid-column: 5;
+  margin-left: -103px;
 }
 
 @media (max-width: 1200px) {
@@ -1519,8 +1562,12 @@ template {
   .history__buttons {
     margin-bottom: 36px;
   }
+  .history__slider {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .subscribe-container {
-    padding: 80px 0;
+    padding: 40px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1549,33 +1596,40 @@ template {
   }
   .footer__grid {
     padding: 90px 0;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
   }
   .footer-info {
     width: 253px;
+    margin-left: 0;
   }
   .footer-nav {
     -ms-grid-row: 1;
     grid-row: 1;
     -ms-grid-column: 2;
     grid-column: 2;
+    margin-left: 0;
   }
   .footer-services {
     -ms-grid-row: 1;
     grid-row: 1;
     -ms-grid-column: 3;
     grid-column: 3;
+    margin-left: 0;
   }
   .footer-companies {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 2;
     grid-column: 2;
+    margin-left: 0;
   }
   .footer-contacts {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 3;
     grid-column: 3;
+    margin-left: 0;
   }
 }
 
@@ -1707,6 +1761,9 @@ template {
   .information-grid__subtitle {
     margin-bottom: 20px;
   }
+  .information-grid__link:hover {
+    text-decoration: none;
+  }
   .products {
     margin-bottom: 40px;
   }
@@ -1740,6 +1797,9 @@ template {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .products__item:hover {
+    text-decoration: none;
   }
   .card__new--three {
     -ms-grid-row: 2;
@@ -1844,11 +1904,18 @@ template {
     width: 630px;
     height: 415px;
   }
+  .history {
+    margin-bottom: 65px;
+  }
+  .history__buttons {
+    margin-bottom: 40px;
+  }
   .history__info {
     width: 100%;
   }
   .history__text {
     width: 100%;
+    margin-bottom: 30px;
   }
   .history-card {
     margin-bottom: 15px;
@@ -1859,11 +1926,13 @@ template {
     height: 100%;
   }
   .swiper-slide__history {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     justify-items: center;
+  }
+  .subscribe {
+    height: 402px;
+  }
+  .subscribe-container {
+    padding: 80px 0;
   }
   .subscribe__title {
     font-size: 48px;
@@ -1872,6 +1941,27 @@ template {
   .subscribe__text {
     font-size: 18px;
     line-height: 32px;
+  }
+  .footer__grid {
+    padding: 60px 0;
+  }
+  .footer-info {
+    margin-left: 10px;
+  }
+  .footer-nav {
+    margin-left: -20px;
+    margin-bottom: 10px;
+  }
+  .footer-companies {
+    margin-left: -20px;
+    margin-top: 20px;
+  }
+  .footer-contacts {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .footer-services {
+    margin-right: 30px;
   }
   .footer__item:hover {
     text-decoration: none;
@@ -1930,10 +2020,6 @@ template {
   .card {
     width: 140px;
     height: 234px;
-    margin-right: 10px;
-  }
-  .card:nth-child(2), .card:nth-child(6) {
-    margin-right: 0;
   }
   .card__info__more {
     width: 140px;
@@ -1947,6 +2033,10 @@ template {
   .card__icon__more {
     font-size: 28px;
     line-height: 32px;
+  }
+  .card__title {
+    font-size: 16px;
+    line-height: 20px;
   }
   .card__title__more {
     font-size: 17px;
@@ -1970,12 +2060,32 @@ template {
     font-size: 19px;
     line-height: 22px;
   }
+  .swiper-wrapper {
+    width: 100%;
+  }
+  .swiper-container {
+    width: 100%;
+  }
   .swiper-pagination {
     bottom: 0;
+  }
+  .swiper-slide__history {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .history__slider {
+    width: 100%;
   }
   .history-card {
     width: 270px;
     height: 475px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .history-card__img {
+    width: 100%;
   }
   .history__info {
     padding: 10px 10px;
@@ -2032,24 +2142,28 @@ template {
     grid-row: 1;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-left: 0;
   }
   .footer-services {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-left: 0;
   }
   .footer-companies {
     -ms-grid-row: 3;
     grid-row: 3;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-left: 0;
   }
   .footer-contacts {
     -ms-grid-row: 4;
     grid-row: 4;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-left: 0;
   }
 }
 
@@ -2181,6 +2295,12 @@ template {
   .card__price {
     margin-right: 5px;
   }
+  .subscribe-container {
+    padding: 60px 0;
+  }
+  .subscribe__text {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 420px) {
@@ -2292,7 +2412,7 @@ template {
     margin-bottom: 20px;
   }
   .products {
-    margin-bottom: 48px;
+    margin-bottom: 35px;
   }
   .products__header {
     margin-bottom: 36px;
@@ -2308,22 +2428,33 @@ template {
   }
   .card {
     width: 130px;
-    margin-right: 5px;
-    margin-bottom: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
   .card__icon {
     width: 16px;
     height: 16px;
   }
+  .card__image {
+    margin-bottom: 10px;
+  }
   .card__info__more {
     width: 130px;
     padding: 20% 10px;
   }
+  .reviews {
+    margin-bottom: 130px;
+  }
   .reviews__text {
     line-height: 36px;
     margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .reviews__author {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 48px;
   }
   .reviews__image {
@@ -2333,6 +2464,48 @@ template {
   }
   .swiper-pagination {
     bottom: 0;
+  }
+  .history__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .history__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .history__buttons {
+    margin-bottom: 20px;
+  }
+  .history__image {
+    width: 48px;
+    height: 48px;
+  }
+  .history-card {
+    height: 407px;
+  }
+  .footer__logo {
+    margin-bottom: 15px;
+  }
+  .footer__item {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .footer-nav, .footer-services, .footer-companies, .footer-contacts {
+    margin-left: 30px;
+  }
+  .footer__title-links {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .footer-info {
+    margin-top: 40px;
+  }
+  .footer-info__text {
+    font-size: 14px;
+    width: 70%;
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

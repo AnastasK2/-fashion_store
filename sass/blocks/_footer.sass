@@ -1,8 +1,9 @@
 .footer
   &__grid
     display: grid
-    padding: 130px 100px
+    padding: 130px 50px
     justify-content: space-between
+    grid-template-columns: repeat(5, 250px)
     &--thankyou
       padding: 60px 0
   &__image
@@ -14,6 +15,7 @@
     grid-column: 1
     justify-self: start
     width: 263px
+    margin-left: 20px
     &__text
       font-size: 16px
       line-height: 22px
@@ -33,12 +35,14 @@
     padding: 0
     margin: 0
   &__link
+    color: $primary
     text-decoration: none
   &__item:hover
     text-decoration: underline
     text-decoration-color: $primary
   &__title
     &-links
+      font-weight: 700
       font-size: 18px
       line-height: 25px
       color: $primary
@@ -48,12 +52,16 @@
   &-nav
     grid-row: 1
     grid-column: 2
+    margin-left: 60px
   &-services
     grid-row: 1
     grid-column: 3
+    margin-left: 10px
   &-companies
     grid-row: 1
     grid-column: 4
+    margin-left: -50px
   &-contacts
     grid-row: 1
     grid-column: 5
+    margin-left: -103px

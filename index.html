@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Магазин модной одежды EHYA</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700&display=swap"
@@ -75,9 +75,7 @@
       <div class="mainpage__bg">
         <div class="container">
           <div class="mainpage-info">
-            <button class="button-green">
-              # READY TO BE COOL
-            </button>
+            <button class="button-green"># READY TO BE COOL</button>
             <h1 class="mainpage-info__title">
               Каждый может <br />
               быть крутым <br />и модным
@@ -132,6 +130,7 @@
                   src="img/info1.jpg"
                   alt="Image info"
                   class="information-grid__item information-grid__item--large"
+                  loading="lazy"
                 />
               </div>
               <div class="information-grid__items">
@@ -139,11 +138,13 @@
                   src="img/info2.jpg"
                   alt="Image info"
                   class="information-grid__item information-grid__item--small"
+                  loading="lazy"
                 />
                 <img
                   src="img/info3.jpg"
                   alt="Image info"
                   class="information-grid__item information-grid__item--small"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -161,6 +162,7 @@
                   src="img/IconInfoNext.png"
                   alt="Icon: Arrow next"
                   class="information-grid__link__image"
+                  loading="lazy"
               /></a>
             </div>
             <!-- /.information__info -->
@@ -177,362 +179,476 @@
         <div class="products__header">
           <h2 class="products__title">Тренды</h2>
           <div class="products__list tab">
-           <button class="products__item tablinks" onclick="openCity(event, 'New')" id="defaultOpen">Новинки</button>
-           <button class="products__item tablinks" onclick="openCity(event, 'Best')">Лучшее</button> 
-           <button class="products__item tablinks" onclick="openCity(event, 'Soon')">Скоро</button>
+            <button
+              class="products__item tablinks"
+              onclick="openCity(event, 'New')"
+              id="defaultOpen"
+            >
+              Новинки
+            </button>
+            <button
+              class="products__item tablinks"
+              onclick="openCity(event, 'Best')"
+            >
+              Лучшее
+            </button>
+            <button
+              class="products__item tablinks"
+              onclick="openCity(event, 'Soon')"
+            >
+              Скоро
+            </button>
           </div>
         </div>
         <!-- /.products__header -->
-        
-          <div id="New" class="tabcontent">
-            <div class="products__wrapper products__wrapper--new">
-              <div class="card card__new card__new--one">
-                <div class="card__image">
-                  <img src="img/prod1.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Minimalist Style</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$25.7 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
-              <div class="card card__new card__new--two">
-                <div class="card__image">
-                  <img src="img/prod2.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Luxury Gown</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$30.6 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
-              <div class="card card__new card__new--three">
-                <div class="card__image">
-                  <img src="img/prod3.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Full Coloristy</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$25.7 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
-              <div class="card card__new card__new--four">
-                <div class="card__image">
-                  <img src="img/prod4.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Pinky Winky</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$109 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
-              <div class="card card__new card__new--five">
-                <div class="card__image">
-                  <img src="img/prod5.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Holiday Vibes</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$51.2 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
-              <div class="card card__new card__new--six">
-                <div class="card__image">
-                  <img src="img/prod6.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Swaggie Shaggy</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$81.3</span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
-              <div class="card card__new card__new--seven">
-                <div class="card__image">
-                  <img src="img/prod7.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Red Formal</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$66.8 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
-              <div class="card card__new card__new--eight">
-                <div class="card__info__more">
-                  <h4 class="card__icon__more">+</h4>
-                  <h4 class="card__title__more">Смотреть больше коллекций</h4>
-                </div>
-              </div>
-              <!-- /.card -->
-            </div>
-            <!-- /.products__wrapper -->
-          </div>
-          <!-- /.tabcontent -->
-          <div id="Best" class="tabcontent tabcontent__best">
-            <div class="products__wrapper products__wrapper--best">
-              <div class="card card__best card__best--one">
-                <div class="card__image">
-                  <img src="img/prod1.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Minimalist Style</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$25.7 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
-              <div class="card card__best card__best--two">
-                <div class="card__image">
-                  <img src="img/prod2.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Luxury Gown</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$30.6 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
-              <div class="card card__best card__best--three">
-                <div class="card__image">
-                  <img src="img/prod3.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Full Coloristy</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$25.7 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
-              <div class="card card__best card__best--four">
-                <div class="card__image">
-                  <img src="img/prod4.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Pinky Winky</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$109 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
-              <div class="card card__best card__best--five">
-                <div class="card__image">
-                  <img src="img/prod5.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Holiday Vibes</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$51.2 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
 
-              <div class="card card__best card__best--eight">
-                <div class="card__info__more">
-                  <h4 class="card__icon__more">+</h4>
-                  <h4 class="card__title__more">Смотреть больше коллекций</h4>
+        <div id="New" class="tabcontent">
+          <div class="products__wrapper products__wrapper--new">
+            <div class="card card__new card__new--one">
+              <div class="card__image">
+                <img
+                  src="img/prod1.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Minimalist Style</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$25.7 </span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
                 </div>
               </div>
-              <!-- /.card -->
+              <!-- /.card__info -->
             </div>
-            <!-- /.products__wrapper -->
-          </div>
-<!-- /.tabcontent -->
-          <div id="Soon" class="tabcontent">
-            <div class="products__wrapper products__wrapper--soon">
-              <div class="card card__soon card__soon--five">
-                <div class="card__image">
-                  <img src="img/prod5.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Holiday Vibes</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$51.2 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
+            <!-- /.card -->
+            <div class="card card__new card__new--two">
+              <div class="card__image">
+                <img
+                  src="img/prod2.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
               </div>
-              <!-- /.card -->
-              <div class="card card__soon card__soon--six">
-                <div class="card__image">
-                  <img src="img/prod6.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Swaggie Shaggy</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$81.3</span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.card -->
-              <div class="card card__soon card__soon--seven">
-                <div class="card__image">
-                  <img src="img/prod7.jpg" alt="" class="card__img" />
-                </div>
-                <div class="card__info">
-                  <h4 class="card__title">Red Formal</h4>
-                  <div class="card__info__bottom">
-                    <span class="card__price">$66.8 </span
-                    ><img
-                      src="img/shopping-cart.png"
-                      alt="Icon: shopping basket"
-                      class="card__icon"
-                    />
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-  
-              <div class="card card__soon card__soon--eight">
-                <div class="card__info__more">
-                  <h4 class="card__icon__more">+</h4>
-                  <h4 class="card__title__more">Смотреть больше коллекций</h4>
+              <div class="card__info">
+                <h4 class="card__title">Luxury Gown</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$30.6 </span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
                 </div>
               </div>
-              <!-- /.card -->
+              <!-- /.card__info -->
             </div>
-            <!-- /.products__wrapper -->
+            <!-- /.card -->
+            <div class="card card__new card__new--three">
+              <div class="card__image">
+                <img
+                  src="img/prod3.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Full Coloristy</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$25.7 </span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+            <!-- /.card -->
+            <div class="card card__new card__new--four">
+              <div class="card__image">
+                <img
+                  src="img/prod4.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Pinky Winky</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$109 </span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+            <!-- /.card -->
+            <div class="card card__new card__new--five">
+              <div class="card__image">
+                <img
+                  src="img/prod5.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Holiday Vibes</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$51.2 </span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+            <!-- /.card -->
+            <div class="card card__new card__new--six">
+              <div class="card__image">
+                <img
+                  src="img/prod6.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Swaggie Shaggy</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$81.3</span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+            <!-- /.card -->
+            <div class="card card__new card__new--seven">
+              <div class="card__image">
+                <img
+                  src="img/prod7.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Red Formal</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$66.8 </span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+            <!-- /.card -->
+            <div class="card card__new card__new--eight">
+              <div class="card__info__more">
+                <h4 class="card__icon__more">+</h4>
+                <h4 class="card__title__more">Смотреть больше коллекций</h4>
+              </div>
+            </div>
+            <!-- /.card -->
           </div>
-         <!-- /.tabcontent -->
+          <!-- /.products__wrapper -->
+        </div>
+        <!-- /.tabcontent -->
+        <div id="Best" class="tabcontent tabcontent__best">
+          <div class="products__wrapper products__wrapper--best">
+            <div class="card card__best card__best--one">
+              <div class="card__image">
+                <img
+                  src="img/prod1.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Minimalist Style</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$25.7 </span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+            <!-- /.card -->
+            <div class="card card__best card__best--two">
+              <div class="card__image">
+                <img
+                  src="img/prod2.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Luxury Gown</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$30.6 </span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+            <!-- /.card -->
+            <div class="card card__best card__best--three">
+              <div class="card__image">
+                <img
+                  src="img/prod3.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Full Coloristy</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$25.7 </span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+            <!-- /.card -->
+            <div class="card card__best card__best--four">
+              <div class="card__image">
+                <img
+                  src="img/prod4.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Pinky Winky</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$109 </span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+            <!-- /.card -->
+            <div class="card card__best card__best--five">
+              <div class="card__image">
+                <img
+                  src="img/prod5.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Holiday Vibes</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$51.2 </span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+            <!-- /.card -->
+
+            <div class="card card__best card__best--eight">
+              <div class="card__info__more">
+                <h4 class="card__icon__more">+</h4>
+                <h4 class="card__title__more">Смотреть больше коллекций</h4>
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.products__wrapper -->
+        </div>
+        <!-- /.tabcontent -->
+        <div id="Soon" class="tabcontent">
+          <div class="products__wrapper products__wrapper--soon">
+            <div class="card card__soon card__soon--five">
+              <div class="card__image">
+                <img
+                  src="img/prod5.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Holiday Vibes</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$51.2 </span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+            <!-- /.card -->
+            <div class="card card__soon card__soon--six">
+              <div class="card__image">
+                <img
+                  src="img/prod6.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Swaggie Shaggy</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$81.3</span
+                  ><img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+            <!-- /.card -->
+            <div class="card card__soon card__soon--seven">
+              <div class="card__image">
+                <img
+                  src="img/prod7.jpg"
+                  alt=""
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__info">
+                <h4 class="card__title">Red Formal</h4>
+                <div class="card__info__bottom">
+                  <span class="card__price">$66.8 </span>
+                  <img
+                    src="img/shopping-cart.png"
+                    alt="Icon: shopping basket"
+                    class="card__icon"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <!-- /.card__info -->
+            </div>
+
+            <div class="card card__soon card__soon--eight">
+              <div class="card__info__more">
+                <h4 class="card__icon__more">+</h4>
+                <h4 class="card__title__more">Смотреть больше коллекций</h4>
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.products__wrapper -->
+        </div>
+        <!-- /.tabcontent -->
       </div>
     </section>
 
     <section class="reviews">
       <div class="container">
-          <div class="reviews__container">
-            <img src="img/quote-left.png" alt="Кавычки" class="reviews__image"/>
+        <div class="reviews__container">
+          <img
+            src="img/quote-left.png"
+            alt="Кавычки"
+            class="reviews__image"
+            loading="lazy"
+          />
           <!-- Slider main container -->
           <div class="swiper-container reviews-slider">
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
                 <p class="reviews__text">
-                  Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие
-                  разные и новаторские. Я покупала несколько раз из коллекций, и что
-                  мне нравится, это то, что они действительно неподвластны времени, а
-                  качество ткани просто превосходно. Я с нетерпением жду новых
-                  коллекций от сезона к сезону
+                  Мне очень нравятся дизайн и стили, которые создает Ehya. Они
+                  такие разные и новаторские. Я покупала несколько раз из
+                  коллекций, и что мне нравится, это то, что они действительно
+                  неподвластны времени, а качество ткани просто превосходно. Я с
+                  нетерпением жду новых коллекций от сезона к сезону
                 </p>
-                <h4 class="reviews__author">Алисия Пума - клиент Fashun</h4>      
+                <h4 class="reviews__author">Алисия Пума - клиент Fashun</h4>
               </div>
               <div class="swiper-slide">
                 <p class="reviews__text">
-                  Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие
-                  разные и новаторские. </p>
+                  Мне очень нравятся дизайн и стили, которые создает Ehya. Они
+                  такие разные и новаторские.
+                </p>
                 <h4 class="reviews__author">Александр Пак- клиент Fashun</h4>
               </div>
               <div class="swiper-slide">
                 <p class="reviews__text">
-                  Прежде всего, базовый вектор развития играет определяющее значение для модели развития. Таким образом, консультация с широким активом способствует повышению качества стандартных подходов.</p>
+                  Прежде всего, базовый вектор развития играет определяющее
+                  значение для модели развития. Таким образом, консультация с
+                  широким активом способствует повышению качества стандартных
+                  подходов.
+                </p>
                 <h4 class="reviews__author">Клаудия Ваттел - клиент Fashun</h4>
               </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
-           
-          </div>
-          </div>
         </div>
+      </div>
       <!-- /.container -->
     </section>
 
@@ -540,20 +656,30 @@
       <div class="container">
         <div class="history-container">
           <div class="history__info">
-            <button class="button-green">
-              истории
-            </button>
+            <button class="button-green">истории</button>
             <h2 class="history__title">Это История Fashun</h2>
-            <p class="history__text">Ознакомьтесь с нашим рассказом 
-              о моде. Написано нашим дизайнером и специалистом.</p>
-              <div class="history__buttons">
-               <button class="history__button history__button--prev">
-                 <img src="img/arrowBPActive.png" alt="назад" class="history__image history__image--prev"/>
-                </button>
-                <button class="history__button history__button--next">
-                  <img src="img/arrowBNActive.png" alt="вперед" class="history__image history__image--next"/>
-                </button>
-              </div>
+            <p class="history__text">
+              Ознакомьтесь с нашим рассказом о моде. Написано нашим дизайнером и
+              специалистом.
+            </p>
+            <div class="history__buttons">
+              <button class="history__button history__button--prev">
+                <img
+                  src="img/arrowBPActive.png"
+                  alt="назад"
+                  class="history__image history__image--prev"
+                  loading="lazy"
+                />
+              </button>
+              <button class="history__button history__button--next">
+                <img
+                  src="img/arrowBNActive.png"
+                  alt="вперед"
+                  class="history__image history__image--next"
+                  loading="lazy"
+                />
+              </button>
+            </div>
           </div>
           <!-- /.history__info -->
           <div class="history__slider">
@@ -563,20 +689,34 @@
                 <div class="swiper-slide swiper-slide__history">
                   <div class="history-card">
                     <div class="history-card__image">
-                      <img src="img/history1.jpg" alt="Фото" class="history-card__img">
+                      <img
+                        src="img/history1.jpg"
+                        alt="Фото"
+                        class="history-card__img"
+                        loading="lazy"
+                      />
                     </div>
                     <div class="history-card__info">
-                      <h4 class="history-card__title">Mix & Match Style 01: повседневный и формальный стиль</h4>
+                      <h4 class="history-card__title">
+                        Mix & Match Style 01: повседневный и формальный стиль
+                      </h4>
                       <a href="#" class="history-card__link">Читать далее</a>
                     </div>
                   </div>
                   <!-- /.history-card -->
                   <div class="history-card">
                     <div class="history-card__image">
-                      <img src="img/history2.jpg" alt="Фото" class="history-card__img">
+                      <img
+                        src="img/history2.jpg"
+                        alt="Фото"
+                        class="history-card__img"
+                        loading="lazy"
+                      />
                     </div>
                     <div class="history-card__info">
-                      <h4 class="history-card__title">Лайфхак: Купите одежду Thrifft на воскресном рынке</h4>
+                      <h4 class="history-card__title">
+                        Лайфхак: Купите одежду Thrifft на воскресном рынке
+                      </h4>
                       <a href="#" class="history-card__link">Читать далее</a>
                     </div>
                   </div>
@@ -586,72 +726,110 @@
                 <div class="swiper-slide swiper-slide__history">
                   <div class="history-card">
                     <div class="history-card__image">
-                      <img src="img/history2.jpg" alt="Фото" class="history-card__img">
+                      <img
+                        src="img/history2.jpg"
+                        alt="Фото"
+                        class="history-card__img"
+                        loading="lazy"
+                      />
                     </div>
                     <div class="history-card__info">
-                      <h4 class="history-card__title">Лайфхак: Купите одежду Thrifft на воскресном рынке</h4>
-                      <a href="#" class="history-card__link">Читать далее</a>
-                    </div>
-                  </div>
-                
-                <div class="history-card">
-                    <div class="history-card__image">
-                      <img src="img/history1.jpg" alt="Фото" class="history-card__img">
-                    </div>
-                    <div class="history-card__info">
-                      <h4 class="history-card__title">2Лайфхак: Купите одежду Thrifft на воскресном рынке
+                      <h4 class="history-card__title">
+                        Лайфхак: Купите одежду Thrifft на воскресном рынке
                       </h4>
                       <a href="#" class="history-card__link">Читать далее</a>
                     </div>
-                </div>
-              </div>
-              <!-- /.swiper-slide -->
-              <div class="swiper-slide swiper-slide__history">
-                <div class="history-card">
-                  <div class="history-card__image">
-                    <img src="img/history1.jpg" alt="Фото" class="history-card__img">
                   </div>
-                  <div class="history-card__info">
-                    <h4 class="history-card__title">Mix & Match Style 01: повседневный и формальный стиль</h4>
-                    <a href="#" class="history-card__link">Читать далее</a>
-                  </div>
-                </div>
-                <!-- /.history-card -->
-                <div class="history-card">
-                  <div class="history-card__image">
-                    <img src="img/history2.jpg" alt="Фото" class="history-card__img">
-                  </div>
-                  <div class="history-card__info">
-                    <h4 class="history-card__title">Лайфхак: Купите одежду Thrifft на воскресном рынке</h4>
-                    <a href="#" class="history-card__link">Читать далее</a>
+
+                  <div class="history-card">
+                    <div class="history-card__image">
+                      <img
+                        src="img/history1.jpg"
+                        alt="Фото"
+                        class="history-card__img"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="history-card__info">
+                      <h4 class="history-card__title">
+                        2Лайфхак: Купите одежду Thrifft на воскресном рынке
+                      </h4>
+                      <a href="#" class="history-card__link">Читать далее</a>
+                    </div>
                   </div>
                 </div>
-                <!-- /.history-card -->
-              </div>
-              <!-- /.swiper-slide -->
-              <div class="swiper-slide swiper-slide__history">
-                <div class="history-card">
-                  <div class="history-card__image">
-                    <img src="img/history2.jpg" alt="Фото" class="history-card__img"/>
+                <!-- /.swiper-slide -->
+                <div class="swiper-slide swiper-slide__history">
+                  <div class="history-card">
+                    <div class="history-card__image">
+                      <img
+                        src="img/history1.jpg"
+                        alt="Фото"
+                        class="history-card__img"
+                      />
+                    </div>
+                    <div class="history-card__info">
+                      <h4 class="history-card__title">
+                        Mix & Match Style 01: повседневный и формальный стиль
+                      </h4>
+                      <a href="#" class="history-card__link">Читать далее</a>
+                    </div>
                   </div>
-                  <div class="history-card__info">
-                    <h4 class="history-card__title">Лайфхак: Купите одежду Thrifft на воскресном рынке</h4>
-                    <a href="#" class="history-card__link">Читать далее</a>
+                  <!-- /.history-card -->
+                  <div class="history-card">
+                    <div class="history-card__image">
+                      <img
+                        src="img/history2.jpg"
+                        alt="Фото"
+                        class="history-card__img"
+                      />
+                    </div>
+                    <div class="history-card__info">
+                      <h4 class="history-card__title">
+                        Лайфхак: Купите одежду Thrifft на воскресном рынке
+                      </h4>
+                      <a href="#" class="history-card__link">Читать далее</a>
+                    </div>
+                  </div>
+                  <!-- /.history-card -->
+                </div>
+                <!-- /.swiper-slide -->
+                <div class="swiper-slide swiper-slide__history">
+                  <div class="history-card">
+                    <div class="history-card__image">
+                      <img
+                        src="img/history2.jpg"
+                        alt="Фото"
+                        class="history-card__img"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="history-card__info">
+                      <h4 class="history-card__title">
+                        Лайфхак: Купите одежду Thrifft на воскресном рынке
+                      </h4>
+                      <a href="#" class="history-card__link">Читать далее</a>
+                    </div>
+                  </div>
+
+                  <div class="history-card">
+                    <div class="history-card__image">
+                      <img
+                        src="img/history1.jpg"
+                        alt="Фото"
+                        class="history-card__img"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="history-card__info">
+                      <h4 class="history-card__title">
+                        2Лайфхак: Купите одежду Thrifft на воскресном рынке
+                      </h4>
+                      <a href="#" class="history-card__link">Читать далее</a>
+                    </div>
                   </div>
                 </div>
-              
-              <div class="history-card">
-                  <div class="history-card__image">
-                    <img src="img/history1.jpg" alt="Фото" class="history-card__img">
-                  </div>
-                  <div class="history-card__info">
-                    <h4 class="history-card__title">2Лайфхак: Купите одежду Thrifft на воскресном рынке
-                    </h4>
-                    <a href="#" class="history-card__link">Читать далее</a>
-                  </div>
-              </div>
-            </div>
-            <!-- /.swiper-slide -->
+                <!-- /.swiper-slide -->
               </div>
               <!-- /.swiper-wrapper -->
             </div>
@@ -668,17 +846,31 @@
           <div class="subscribe-container">
             <div class="subscribe__info">
               <h2 class="subscribe__title">Подпишитесь</h2>
-              <p class="subscribe__text">Напишите свой адрес электронной почты.
-                <br>  Мы будем присылать вам новости из мира моды.</p>
+              <p class="subscribe__text">
+                Напишите свой адрес электронной почты. <br />
+                Мы будем присылать вам новости из мира моды.
+              </p>
             </div>
             <!-- /.subscribe__info -->
             <div class="subscribe-form">
-              <form action="sendMail.php" method="POST" class="subscribe-form__info form">
-                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="subscribe-form__input"
-                placeholder="Ваш Email" name="email" required >
+              <form
+                action="sendMail.php"
+                method="POST"
+                class="subscribe-form__info form"
+              >
+                <input
+                  type="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  class="subscribe-form__input"
+                  placeholder="Ваш Email"
+                  name="email"
+                  required
+                />
                 <!-- <img src="img/email.png" alt="Почта" class="subscribe-form__icon"> -->
-              </input>
-                <button class="button subscribe-form__button">Подписаться</button>
+
+                <button class="button subscribe-form__button">
+                  Подписаться
+                </button>
               </form>
             </div>
             <!-- /.subscribe-form -->
@@ -693,130 +885,171 @@
       <div class="container">
         <div class="footer__grid">
           <div class="footer-info">
-           <div class="footer__image">
-            <a href="#"><img src="img/Logo.png" alt="" class="footer-info__logo"></a>
-           </div>
-            <span class="footer-info__text">Интернет-магазин брендовой одежды с оплатой онлайн</span>
+            <div class="footer__image">
+              <a href="#"
+                ><img
+                  src="img/Logo.png"
+                  alt=""
+                  class="footer-info__logo"
+                  loading="lazy"
+              /></a>
+            </div>
+            <span class="footer-info__text"
+              >Интернет-магазин брендовой одежды с оплатой онлайн</span
+            >
             <div class="footer-info__social-links">
-              <a href="" class="footer-info__soclial-link">
-                <img src="img/gmail.png" alt="" class="footer-info__social-item"></a>
+              <a
+                href="https://www.google.com/intl/ru/gmail/about/"
+                class="footer-info__soclial-link"
+              >
+                <img
+                  src="img/gmail.png"
+                  alt=""
+                  class="footer-info__social-item"
+                  loading="lazy"
+              /></a>
               <!-- /.footer-info__soclial-link -->
-              <a href="" class="footer-info__soclial-link">
-                <img src="img/twitter.png" alt="" class="footer-info__social-item"></a>
+              <a href="https://twitter.com/" class="footer-info__soclial-link">
+                <img
+                  src="img/twitter.png"
+                  alt=""
+                  class="footer-info__social-item"
+                  loading="lazy"
+              /></a>
               <!-- /.footer-info__soclial-link -->
-              <a href="" class="footer-info__soclial-link">
-                <img src="img/instagram.png" alt="" class="footer-info__social-item"></a>
+              <a
+                href="https://www.instagram.com/"
+                class="footer-info__soclial-link"
+              >
+                <img
+                  src="img/instagram.png"
+                  alt=""
+                  class="footer-info__social-item"
+                  loading="lazy"
+              /></a>
               <!-- /.footer-info__soclial-link -->
-              <a href="" class="footer-info__soclial-link">
-                <img src="img/linkedIn.png" alt="" class="footer-info__social-item"></a>
+              <a
+                href="https://www.linkedin.cn/login"
+                class="footer-info__soclial-link"
+              >
+                <img
+                  src="img/linkedIn.png"
+                  alt=""
+                  class="footer-info__social-item"
+                  loading="lazy"
+              /></a>
               <!-- /.footer-info__soclial-link -->
             </div>
           </div>
           <div class="footer-nav">
-            <h4 class="footer__title-links">Навигация</h4> 
+            <h4 class="footer__title-links">Навигация</h4>
             <ul class="footer__links footer-nav__links">
-              <a href="#" class="footer__link"> 
-               <li class="footer__item footer-nav__item">Новая коллекция</li>
-              </a>     
-              <a href="#" class="footer__link"> 
-                <li class="footer__item footer-nav__item">Трендовая одежда</li>
-              </a>      
-              <a href="#" class="footer__link"> 
-                <li class="footer__item footer-nav__item">Истории Fashun</li>
-              </a>    
-              <a href="#" class="footer__link"> 
-                <li class="footer__item footer-nav__item">Отзывы клиентов</li>
-              </a>     
-              <a href="#" class="footer__link"> 
-              <li class="footer__item footer-nav__item">Вся одежда</li>
-              </a>
+              <li class="footer__item footer-nav__item">
+                <a href="#" class="footer__link"> Новая коллекция </a>
+              </li>
+              <li class="footer__item footer-nav__item">
+                <a href="#" class="footer__link"> Трендовая одежда</a>
+              </li>
+              <li class="footer__item footer-nav__item">
+                <a href="#" class="footer__link"> Истории Fashun </a>
+              </li>
+              <li class="footer__item footer-nav__item">
+                <a href="#" class="footer__link"> Отзывы клиентов </a>
+              </li>
+              <li class="footer__item footer-nav__item">
+                <a href="#" class="footer__link"> Вся одежда</a>
+              </li>
             </ul>
           </div>
           <div class="footer-services">
-            <h4 class="footer__title-links">Сервисы</h4> 
+            <h4 class="footer__title-links">Сервисы</h4>
             <ul class="footer__links footer-services__links">
-              <a href="#" class="footer__link"> 
-               <li class="footer__item footer-services__item">Рассрочка на 6 мес </li>
-              </a>
-              <a href="#" class="footer__link"> 
-               <li class="footer__item footer-services__item">Кредит на 12 мес</li>
-              </a>           
-              <a href="#" class="footer__link">
-                  <li class="footer__item footer-services__item">Доставка по РФ</li>
-              </a>         
-              <a href="#" class="footer__link"> 
-                <li class="footer__item footer-services__item">Возврат покупок</li>
-              </a>          
-              <a href="#" class="footer__link">
-                <li class="footer__item footer-services__item">Акции и кэшбек</li>
-              </a>        
+              <li class="footer__item footer-services__item">
+                <a href="#" class="footer__link">Рассрочка на 6 мес</a>
+              </li>
+              <li class="footer__item footer-services__item">
+                <a href="#" class="footer__link"> Кредит на 12 мес</a>
+              </li>
+              <li class="footer__item footer-services__item">
+                <a href="#" class="footer__link">Доставка по РФ</a>
+              </li>
+              <li class="footer__item footer-services__item">
+                <a href="#" class="footer__link">Возврат покупок</a>
+              </li>
+              <li class="footer__item footer-services__item">
+                <a href="#" class="footer__link">Акции и кэшбек</a>
+              </li>
             </ul>
           </div>
 
           <div class="footer-companies">
-           <h4 class="footer__title-links">Компания</h4> 
+            <h4 class="footer__title-links">Компания</h4>
             <ul class="footer__links footer-companies__links">
-             <a href="#" class="footer__link"> 
-               <li class="footer__item footer-companies__item">Об Ehya</li>
-              </a>   
-              <a href="#" class="footer__link"> 
-                  <li class="footer__item footer-companies__item">Правила сайта </li>
-              </a>          
-              <a href="#" class="footer__link"> 
-                <li class="footer__item footer-companies__item">Обработка данных</li>
-              </a>            
-              <a href="#" class="footer__link"> 
-                <li class="footer__item footer-companies__item">Вакансии</li>
-              </a>   
+              <li class="footer__item footer-companies__item">
+                <a href="#" class="footer__link">Об Ehya</a>
+              </li>
+              <li class="footer__item footer-companies__item">
+                <a href="#" class="footer__link">Правила сайта</a>
+              </li>
+              <li class="footer__item footer-companies__item">
+                <a href="#" class="footer__link">Обработка данных</a>
+              </li>
+              <li class="footer__item footer-companies__item">
+                <a href="#" class="footer__link">Вакансии</a>
+              </li>
             </ul>
           </div>
 
           <div class="footer-contacts">
-            <h4 class="footer__title-links">Контакты</h4> 
+            <h4 class="footer__title-links">Контакты</h4>
             <ul class="footer__links footer-contacts__links">
-              <a href="#" class="footer__link">
-              <li class="footer__item footer-contacts__item">Группа Фейсбук</li>
-              </a>        
-              <a href="#" class="footer__link"> 
-                <li class="footer__item footer-contacts__item">Канал Youtube</li>
-              </a>       
+              <li class="footer__item footer-contacts__item">
+                <a href="#" class="footer__link">Группа Фейсбук</a>
+              </li>
+              <li class="footer__item footer-contacts__item">
+                <a href="#" class="footer__link">Канал Youtube</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+
     <div class="modal">
-      
-        <div class="modal__overlay"></div>
-        <!-- /.modal__overlay -->
-        <div class="modal__dialog">
-          <a href="#" class="modal__close">
-            <img src="img/close.png" alt="Icon: close" class="modal__image-close"
-          /></a>
-          <h3 class="modal__title">ВХОД</h3>
-          <form action="sendModal.php" method="POST" class="modal__form">
-            <input
-              type="email"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              class="input modal__input"
-              placeholder="Ваша почта"
-              name="mail"
-              required
-            />
-            <input
-              type="password"
-              class="input modal__input phone"
-              placeholder="Password"
-              name="pass"
-              minlength="17"
-              required
-            />
-            <button class="button modal__button">Войти</button>
-          </form>
-        </div>
-        <!-- /.modal__dialog -->
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img
+            src="img/close.png"
+            alt="Icon: close"
+            class="modal__image-close"
+          />
+        </a>
+        <h3 class="modal__title">ВХОД</h3>
+        <form action="sendModal.php" method="POST" class="modal__form">
+          <input
+            type="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            class="input modal__input"
+            placeholder="Ваша почта"
+            name="mail"
+            required
+          />
+          <input
+            type="password"
+            class="input modal__input phone"
+            placeholder="Password"
+            name="pass"
+            minlength="17"
+            required
+          />
+          <button class="button modal__button">Войти</button>
+        </form>
       </div>
+      <!-- /.modal__dialog -->
     </div>
+    <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>

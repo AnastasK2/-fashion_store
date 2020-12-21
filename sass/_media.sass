@@ -74,9 +74,12 @@
       margin-right: auto
     &__buttons
       margin-bottom: 36px
+    &__slider
+      margin-left: auto
+      margin-right: auto
   .subscribe
     &-container
-      padding: 80px 0
+      padding: 40px 0
       flex-direction: column
       height: 100%
       width: 100%
@@ -96,20 +99,26 @@
   .footer
     &__grid
       padding: 90px 0
+      grid-template-columns: none
     &-info
       width: 253px
+      margin-left: 0
     &-nav
       grid-row: 1
       grid-column: 2
+      margin-left: 0
     &-services
       grid-row: 1
       grid-column: 3
+      margin-left: 0
     &-companies
       grid-row: 2
       grid-column: 2
+      margin-left: 0
     &-contacts
       grid-row: 2
       grid-column: 3
+      margin-left: 0
 
 @media ( max-width: 992px )
   .container
@@ -205,6 +214,8 @@
         margin-top: 20px
       &__subtitle
         margin-bottom: 20px
+      &__link:hover
+        text-decoration: none
   .products
     margin-bottom: 40px
     &__header
@@ -225,6 +236,8 @@
         justify-content: space-evenly
       &--soon
         justify-content: space-evenly
+    &__item:hover
+      text-decoration: none
   .card
     &__new
       &--three
@@ -283,10 +296,14 @@
       width: 630px
       height: 415px
   .history
+    margin-bottom: 65px
+    &__buttons
+      margin-bottom: 40px
     &__info
       width: 100%
     &__text
       width: 100%
+      margin-bottom: 30px
     &-card
       margin-bottom: 15px
       margin-left: auto
@@ -297,9 +314,11 @@
         height: 100%
     &-slide
       &__history
-        flex-direction: column
         justify-items: center
   .subscribe
+    height: 402px
+    &-container
+      padding: 80px 0
     &__title
       font-size: 48px
       line-height: 60px
@@ -307,8 +326,24 @@
       font-size: 18px
       line-height: 32px
   .footer
+    &__grid
+      padding: 60px 0
+    &-info
+      margin-left: 10px
+    &-nav
+      margin-left: -20px
+      margin-bottom: 10px
+    &-companies
+      margin-left: -20px
+      margin-top: 20px
+    &-contacts
+      margin-left: 0
+      margin-top: 20px
+    &-services
+      margin-right: 30px
     &__item:hover
       text-decoration: none
+
 @media ( max-width: 767px)
   .container
     max-width: 600px
@@ -351,9 +386,9 @@
   .card
     width: 140px
     height: 234px
-    margin-right: 10px
-    &:nth-child(2), &:nth-child(6)
-      margin-right: 0
+    // margin-right: 10px
+    // &:nth-child(2), &:nth-child(6)
+    //   margin-right: 0
     &__info
       &__more
         width: 140px
@@ -366,6 +401,8 @@
         font-size: 28px
         line-height: 32px
     &__title
+      font-size: 16px
+      line-height: 20px
       &__more
         font-size: 17px
         line-height: 20px
@@ -384,12 +421,25 @@
       font-size: 19px
       line-height: 22px
   .swiper
+    &-wrapper
+      width: 100%
+    &-container
+      width: 100%
     &-pagination
       bottom: 0
+    &-slide
+      &__history
+        flex-direction: column
   .history
+    &__slider
+      width: 100%
     &-card
       width: 270px
       height: 475px
+      margin-right: auto
+      margin-left: auto
+      &__img
+        width: 100%
     &__info
       padding: 10px 10px
     &__title
@@ -429,19 +479,23 @@
         width: 263px
         margin-left: auto
         margin-right: auto
-
     &-nav
       grid-row: 1
       grid-column: 1
+      margin-left: 0
     &-services
       grid-row: 2
       grid-column: 1
+      margin-left: 0
     &-companies
       grid-row: 3
       grid-column: 1
+      margin-left: 0
     &-contacts
       grid-row: 4
       grid-column: 1
+      margin-left: 0
+
 @media ( max-width: 576px)
   .container
     max-width: 540px
@@ -533,6 +587,11 @@
         justify-content: start
     &__price
       margin-right: 5px
+  .subscribe
+    &-container
+      padding: 60px 0
+    &__text
+      margin-bottom: 10px
 @media (min-width: 320px) and (max-width: 420px)
   .container
     width: 92%
@@ -613,7 +672,7 @@
       &__title
         margin-bottom: 20px
   .products
-    margin-bottom: 48px
+    margin-bottom: 35px
     &__header
       margin-bottom: 36px
     &__title
@@ -625,21 +684,28 @@
       margin-right: 16px
   .card
     width: 130px
-    margin-right: 5px
-    margin-bottom: 0
+    margin-right: 0
+    margin-bottom: 20px
     &__icon
       width: 16px
       height: 16px
+    &__image
+      margin-bottom: 10px
     &__info
       &__more
         width: 130px
         padding: 20% 10px
-
   .reviews
+    margin-bottom: 130px
     &__text
       line-height: 36px
       margin-bottom: 10px
+      margin-right: auto
+      margin-left: auto
     &__author
+      width: 100%
+      margin-left: auto
+      margin-right: auto
       margin-bottom: 48px
     &__image
       width: 65px
@@ -648,3 +714,37 @@
   .swiper
     &-pagination
       bottom: 0
+  .history
+    &__text
+      font-size: 16px
+      line-height: 28px
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__buttons
+      margin-bottom: 20px
+    &__image
+      width: 48px
+      height: 48px
+    &-card
+      height: 407px
+  .footer
+    &__logo
+      margin-bottom: 15px
+    &__item
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 15px
+    &-nav, &-services, &-companies, &-contacts
+      margin-left: 30px
+    &__title
+      &-links
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 20px
+    &-info
+      margin-top: 40px
+      &__text
+        font-size: 14px
+        width: 70%
+        margin-bottom: 10px
