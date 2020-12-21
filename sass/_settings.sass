@@ -23,6 +23,22 @@
       line-height: 20px
       margin-bottom: 28px
       text-transform: uppercase
+    &__up
+      background-color: transparent
+      text-align: center
+      border: none
+      margin: 30px
+      position: fixed
+      bottom: 30px
+      right: 30px
+      transition: background-color .3s, opacity .5s, visibility .5s
+      opacity: 0
+      visibility: hidden
+      &--show
+        transition: background-color .3s
+        z-index: 1000
+        visibility: visible
+        opacity: 100
   .input
     border: none
     border-radius: 8px
