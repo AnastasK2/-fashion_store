@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Магазин модной одежды EHYA</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700&display=swap"
@@ -545,8 +547,12 @@
             <p class="history__text">Ознакомьтесь с нашим рассказом 
               о моде. Написано нашим дизайнером и специалистом.</p>
               <div class="history__buttons">
-               <button class="history__button history__button--prev"><img src="img/arrowbuttonPrev.png" alt=""></button>
-               <button class="history__button history__button--next"><img src="img/arrowbuttonNext.png" alt=""></button>
+               <button class="history__button history__button--prev">
+                 <img src="img/arrowBPActive.png" alt="назад" class="history__image history__image--prev"/>
+                </button>
+                <button class="history__button history__button--next">
+                  <img src="img/arrowBNActive.png" alt="вперед" class="history__image history__image--next"/>
+                </button>
               </div>
           </div>
           <!-- /.history__info -->
@@ -600,6 +606,52 @@
                 </div>
               </div>
               <!-- /.swiper-slide -->
+              <div class="swiper-slide swiper-slide__history">
+                <div class="history-card">
+                  <div class="history-card__image">
+                    <img src="img/history1.jpg" alt="Фото" class="history-card__img">
+                  </div>
+                  <div class="history-card__info">
+                    <h4 class="history-card__title">Mix & Match Style 01: повседневный и формальный стиль</h4>
+                    <a href="#" class="history-card__link">Читать далее</a>
+                  </div>
+                </div>
+                <!-- /.history-card -->
+                <div class="history-card">
+                  <div class="history-card__image">
+                    <img src="img/history2.jpg" alt="Фото" class="history-card__img">
+                  </div>
+                  <div class="history-card__info">
+                    <h4 class="history-card__title">Лайфхак: Купите одежду Thrifft на воскресном рынке</h4>
+                    <a href="#" class="history-card__link">Читать далее</a>
+                  </div>
+                </div>
+                <!-- /.history-card -->
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide swiper-slide__history">
+                <div class="history-card">
+                  <div class="history-card__image">
+                    <img src="img/history2.jpg" alt="Фото" class="history-card__img"/>
+                  </div>
+                  <div class="history-card__info">
+                    <h4 class="history-card__title">Лайфхак: Купите одежду Thrifft на воскресном рынке</h4>
+                    <a href="#" class="history-card__link">Читать далее</a>
+                  </div>
+                </div>
+              
+              <div class="history-card">
+                  <div class="history-card__image">
+                    <img src="img/history1.jpg" alt="Фото" class="history-card__img">
+                  </div>
+                  <div class="history-card__info">
+                    <h4 class="history-card__title">2Лайфхак: Купите одежду Thrifft на воскресном рынке
+                    </h4>
+                    <a href="#" class="history-card__link">Читать далее</a>
+                  </div>
+              </div>
+            </div>
+            <!-- /.swiper-slide -->
               </div>
               <!-- /.swiper-wrapper -->
             </div>
@@ -622,8 +674,8 @@
             <!-- /.subscribe__info -->
             <div class="subscribe-form">
               <form action="sendMail.php" method="POST" class="subscribe-form__info form">
-                <input type="email" class="subscribe-form__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                required placeholder="Ваш Emaill" name="mail">
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="subscribe-form__input"
+                placeholder="Ваш Email" name="email" required >
                 <!-- <img src="img/email.png" alt="Почта" class="subscribe-form__icon"> -->
               </input>
                 <button class="button subscribe-form__button">Подписаться</button>
@@ -640,7 +692,6 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__grid">
-          
           <div class="footer-info">
            <div class="footer__image">
             <a href="#"><img src="img/Logo.png" alt="" class="footer-info__logo"></a>
@@ -664,38 +715,71 @@
           <div class="footer-nav">
             <h4 class="footer__title-links">Навигация</h4> 
             <ul class="footer__links footer-nav__links">
-              <li class="footer__item footer-nav__item">Новая коллекция</li>
-              <li class="footer__item footer-nav__item">Трендовая одежда</li>
-              <li class="footer__item footer-nav__item">Истории Fashun</li>
-              <li class="footer__item footer-nav__item">Отзывы клиентов</li>
+              <a href="#" class="footer__link"> 
+               <li class="footer__item footer-nav__item">Новая коллекция</li>
+              </a>     
+              <a href="#" class="footer__link"> 
+                <li class="footer__item footer-nav__item">Трендовая одежда</li>
+              </a>      
+              <a href="#" class="footer__link"> 
+                <li class="footer__item footer-nav__item">Истории Fashun</li>
+              </a>    
+              <a href="#" class="footer__link"> 
+                <li class="footer__item footer-nav__item">Отзывы клиентов</li>
+              </a>     
+              <a href="#" class="footer__link"> 
               <li class="footer__item footer-nav__item">Вся одежда</li>
+              </a>
             </ul>
           </div>
           <div class="footer-services">
             <h4 class="footer__title-links">Сервисы</h4> 
             <ul class="footer__links footer-services__links">
-              <li class="footer__item footer-services__item">Рассрочка на 6 мес </li>
-              <li class="footer__item footer-services__item">Кредит на 12 мес</li>
-              <li class="footer__item footer-services__item">Доставка по РФ</li>
-              <li class="footer__item footer-services__item">Возврат покупок</li>
-              <li class="footer__item footer-services__item">Акции и кэшбек</li>
+              <a href="#" class="footer__link"> 
+               <li class="footer__item footer-services__item">Рассрочка на 6 мес </li>
+              </a>
+              <a href="#" class="footer__link"> 
+               <li class="footer__item footer-services__item">Кредит на 12 мес</li>
+              </a>           
+              <a href="#" class="footer__link">
+                  <li class="footer__item footer-services__item">Доставка по РФ</li>
+              </a>         
+              <a href="#" class="footer__link"> 
+                <li class="footer__item footer-services__item">Возврат покупок</li>
+              </a>          
+              <a href="#" class="footer__link">
+                <li class="footer__item footer-services__item">Акции и кэшбек</li>
+              </a>        
             </ul>
           </div>
+
           <div class="footer-companies">
            <h4 class="footer__title-links">Компания</h4> 
             <ul class="footer__links footer-companies__links">
-              <li class="footer__item footer-companies__item">Об Ehya</li>
-              <li class="footer__item footer-companies__item">Правила сайта </li>
-              <li class="footer__item footer-companies__item">Обработка данных</li>
-              <li class="footer__item footer-companies__item">Вакансии</li>
-              
+             <a href="#" class="footer__link"> 
+               <li class="footer__item footer-companies__item">Об Ehya</li>
+              </a>   
+              <a href="#" class="footer__link"> 
+                  <li class="footer__item footer-companies__item">Правила сайта </li>
+              </a>          
+              <a href="#" class="footer__link"> 
+                <li class="footer__item footer-companies__item">Обработка данных</li>
+              </a>            
+              <a href="#" class="footer__link"> 
+                <li class="footer__item footer-companies__item">Вакансии</li>
+              </a>   
             </ul>
           </div>
+
           <div class="footer-contacts">
             <h4 class="footer__title-links">Контакты</h4> 
             <ul class="footer__links footer-contacts__links">
+              <a href="#" class="footer__link">
               <li class="footer__item footer-contacts__item">Группа Фейсбук</li>
-              <li class="footer__item footer-contacts__item">Канал Youtube</li>
+              </a>        
+              <a href="#" class="footer__link"> 
+                <li class="footer__item footer-contacts__item">Канал Youtube</li>
+              </a>       
             </ul>
           </div>
         </div>

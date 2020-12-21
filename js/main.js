@@ -4,7 +4,7 @@ menuButton.addEventListener('click', function () {
   document.querySelector(".header__block").classList.toggle("header__block--visible");
 });
 
-
+document.getElementById("defaultOpen").click();
 
 function openCity(evt, cityName) {
   // Declare all variables
@@ -25,7 +25,7 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-document.getElementById("defaultOpen").click();
+
 
 var mySwiper = new Swiper('.reviews-slider', {
   // Optional parameters
@@ -52,6 +52,8 @@ var historySwiper = new Swiper('.history-slider', {
   navigation: {
     nextEl: '.history__button--next',
     prevEl: '.history__button--prev',
+    // disabledClass: '.swiper-button-disabled--next',
+    // disabledClass: '.swiper-button-disabled--prev'
   },
   
   keyboard: {
@@ -85,10 +87,13 @@ $(".form").each(function (){
   $(this).validate({
     errorClass: "invalid",
     messages: {
-      mail: {
+      email: {
         required: "Пожалуйста, введите адрес электронной почты",
         mail: "Ваша почта должна быть в виде name@domain.com"
       },
     },
   });
 });
+
+// $(".history__button--next img").attr("src", "../img/arrowBNActive.png");
+// $(".history__button--prev img").attr("src", "../img/arrowBPActive.png");

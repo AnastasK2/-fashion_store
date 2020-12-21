@@ -12,17 +12,31 @@
     line-height: 60px
     margin: 0
     padding: 0
-    margin-bottom: 24px
+    margin-bottom: 20px
     color: $primary
+    margin-top: -10px
   &__text
     font-size: 20px
     line-height: 36px
     color: $primary
-    margin-bottom: 42px
+    margin-bottom: 40px
+  &__buttons
+    margin-bottom: 20px
   &__button
+    // display: inline-block
     background-color: transparent
     border: none
     cursor: pointer
+  // &__image
+    // &--prev
+    //   // &--img
+    //   background-image: url("../img/arrowBPActive.png")
+    //   background-repeat: no-repeat
+    //   margin-right: 15px
+    // &--next
+    //   
+    //   background-image: url("../img/arrowBNext.png")
+    //   background-repeat: no-repeat
   &-card
     width: 322px
     height: 475px
@@ -47,6 +61,16 @@
       text-decoration: none
 
 .swiper
+  &-button
+    &-disabled
+      background-image: url("../img/arrowBPrev.png")
+      background-repeat: no-repeat
+      // &--next
+      //   background-image: url("../img/arrowBPrev.png")
+      //   background-repeat: no-repeat
+      // &--prev
+      //   background-image: url("../img/arrowBPrev.png")
+      //   background-repeat: no-repeat
   &-wrapper
     &__history
       width: 670px
