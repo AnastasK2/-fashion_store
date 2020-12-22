@@ -1265,10 +1265,6 @@ template {
   text-decoration: none;
 }
 
-.swiper-button-disabled {
-  display: none;
-}
-
 .swiper-wrapper__history {
   width: 670px;
   height: 475px;
@@ -2345,6 +2341,16 @@ template {
   .subscribe__text {
     margin-bottom: 10px;
   }
+  .button__up {
+    width: 56px;
+    height: 56px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .button-up__image {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 420px) {
@@ -2550,6 +2556,16 @@ template {
     font-size: 14px;
     width: 70%;
     margin-bottom: 10px;
+  }
+  .button__up {
+    width: 38px;
+    height: 38px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .button-up__image {
+    width: 40px;
+    height: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
