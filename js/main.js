@@ -133,10 +133,10 @@
   var tabIn = historyButtonPrev.getAttribute('tabindex');
       if( tabIn == -1){
         // console.log("swiper-button-disabled!");
-        $(".history-image__prev").attr("src", "../img/arrowBPrev.png");
+        $(".history-image__prev").attr("src", "img/arrowBPrev.png");
       } 
       else {
-        $(".history-image__prev").attr("src", "../img/arrowBPActive.png");
+        $(".history-image__prev").attr("src", "img/arrowBPActive.png");
       }
 
 historyButtons.addEventListener("click", function () {
@@ -144,19 +144,19 @@ historyButtons.addEventListener("click", function () {
     var tabIn2 = historyButtonNext.getAttribute('tabindex');
       if( tabIn == -1){
         // console.log("swiper-button-disabled!");
-        $(".history-image__prev").attr("src", "../img/arrowBPrev.png");
+        $(".history-image__prev").attr("src", "img/arrowBPrev.png");
       }
       else {
-        $(".history-image__prev").attr("src", "../img/arrowBPActive.png");
+        $(".history-image__prev").attr("src", "img/arrowBPActive.png");
       }
 
       var tabIn2 = historyButtonNext.getAttribute('tabindex');
       if( tabIn2 == -1){
         // console.log("swiper-button-disabled!");
-        $(".history-image__next").attr("src", "../img/arrowBNext.png");
+        $(".history-image__next").attr("src", "img/arrowBNext.png");
       }
       else {
-        $(".history-image__next").attr("src", "../img/arrowBNActive.png");
+        $(".history-image__next").attr("src", "img/arrowBNActive.png");
       }     
   });
 
