@@ -25,6 +25,8 @@
     color: $text
     border: none
     background-color: transparent
+    outline: none
+    cursor: pointer
   &__item:hover
     text-decoration: underline
     text-decoration-color: $text
@@ -45,11 +47,15 @@
     padding: 0
     font-feature-settings: "locl" 0
 .card
-  width: 260px
+  width: 280px
   height: 441px
   // margin-right: 20px
   margin-bottom: 50px
   cursor: pointer
+  &__button
+    border: none
+    background-color: transparent
+    cursor: pointer
   &__new
     &--one
       grid-row: 1
@@ -111,16 +117,21 @@
     border-radius: 8px
     overflow: hidden
     margin-bottom: 20px
+  &__img
+    width: 100%
   &__info
     padding: 0 6px
     &__more
-      width: 260px
-      height: 350px
+      width: 280px
+      height: 376px
       background: $secondary
       border-radius: 8px
       color: $light
       text-align: center
       padding: 50% 22px
+      &__link
+        text-decoration: none
+        color: $light
     &__bottom
       display: flex
       align-items: center

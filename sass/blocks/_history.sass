@@ -28,28 +28,30 @@
   &__buttons
     margin-bottom: 20px
   &__button
-    // display: inline-block
     background-color: transparent
     border: none
     cursor: pointer
-  // &__image
-    // &--prev
-    //   // &--img
-    //   background-image: url("../img/arrowBPActive.png")
-    //   background-repeat: no-repeat
-    //   margin-right: 15px
-    // &--next
-    //   
-    //   background-image: url("../img/arrowBNext.png")
-    //   background-repeat: no-repeat
+    outline: none
+    &--prev
+
+      margin-left: -6px
   &-card
     width: 322px
     height: 475px
-    overflow: hidden
+    // overflow: hidden
+    // border-radius: 8px
     &__image
       width: 100%
+    &__img
+      border-top-right-radius: 10px
+      border-top-left-radius: 10px
     &__info
       padding: 20px 20px
+      background-color: #fff
+      position: absolute
+      width: 322px
+      margin-top: -20px
+      margin-left: 10px
     &__title
       font-family: HK Grotesk
       font-weight: 500
@@ -67,24 +69,21 @@
       line-height: 22px
       color: $secondary
       text-decoration: none
-
+    &__link:hover
+      text-decoration: underline
+      text-decoration-color: $secondary
+  &__slider
+    width: 670px
 .swiper
-  // &-button
-    // &-disabled
-      // display: none
-      // background-image: url("../img/arrowBPrev.png")
-      // background-repeat: no-repeat
-      // &--next
-      //   background-image: url("../img/arrowBPrev.png")
-      //   background-repeat: no-repeat
-      // &--prev
-      //   background-image: url("../img/arrowBPrev.png")
-      //   background-repeat: no-repeat
+  &-container
+    width: 100%
   &-wrapper
+    width: 100%
     &__history
-      width: 670px
+      // width: 670px
       height: 475px
   &-slide
     &__history
       display: flex
       justify-content: space-between
+      // width: 322px

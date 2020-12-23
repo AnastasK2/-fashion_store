@@ -1,11 +1,17 @@
 
   var menuButton = document.querySelector('.menu-button');
+  var closeMenuButton = document.querySelector('.header__close--mobile--visible');
   menuButton.addEventListener('click', function () {
-    document.querySelector(".header__block").classList.toggle("header__block--visible");
+    document.querySelector(".header__block").classList.add("header__block--visible");
   });
-
+  closeMenuButton.addEventListener('click', function () {
+    document.querySelector(".header__block").classList.remove("header__block--visible");
+  });
+  document.getElementById("defaultOpen").focus();
   document.getElementById("defaultOpen").click();
+ 
 
+// кнопка вверх
   $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
@@ -14,7 +20,6 @@
         $('body,html').animate({scrollTop: top}, 1500);
     });
   });
-
 
     var btn = $('#buttonUp'); 
     $(window).scroll(function() {     
@@ -52,8 +57,11 @@
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    autoplay: true,
-    disableOnInteraction: false,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false,
+    },
+    
     
     pagination: {
       el: '.swiper-pagination',
@@ -62,6 +70,18 @@
       modifierClass: 'swiper-pagination',
       bulletClass: 'swiper-pagination-bullet',
       bulletActiveClass: 'swiper-pagination-bullet-active',
+    },
+
+    on: {
+      init() {
+        this.el.addEventListener('mouseenter', () => {
+          this.autoplay.stop();
+        });
+  
+        this.el.addEventListener('mouseleave', () => {
+          this.autoplay.start();
+        });
+      }
     },
 
   })
@@ -99,19 +119,19 @@
   }
   function closeModal (event){
     event.preventDefault();
-    if(event.code === 27) {
+    // if(event.code === 27) {
+    //   modalOverlay.removeClass('modal__overlay--visible');
+    //   modalDialog.removeClass('modal__dialog--visible');
+    // }
+    // else{
       modalOverlay.removeClass('modal__overlay--visible');
       modalDialog.removeClass('modal__dialog--visible');
-    }
-    else{
-      modalOverlay.removeClass('modal__overlay--visible');
-      modalDialog.removeClass('modal__dialog--visible');
-    }
+    // }
   }
 
   modalOverlay.on('click', closeModal); //закрываем нажимая вне окна
 
-  document.addEventListener('keydown', closeModal);  //закрываем по нажатию
+  // document.addEventListener('keydown', closeModal);  //закрываем по нажатию
   
 
   //обработка формы
@@ -119,10 +139,14 @@
     $(this).validate({
       errorClass: "invalid",
       messages: {
-        email: {
+        mail: {
           required: "Пожалуйста, введите адрес электронной почты",
           mail: "Ваша почта должна быть в виде name@domain.com"
         },
+        pass: {
+          required: "Пожалуйста, введите пароль",
+          // mail: "Ваша пароль "
+        }
       },
     });
   });
@@ -133,10 +157,10 @@
   var tabIn = historyButtonPrev.getAttribute('tabindex');
       if( tabIn == -1){
         // console.log("swiper-button-disabled!");
-        $(".history-image__prev").attr("src", "img/arrowBPrev.png");
+        $(".history__image__prev").attr("src", "img/arrowBPrev.png");
       } 
       else {
-        $(".history-image__prev").attr("src", "img/arrowBPActive.png");
+        $(".history__image__prev").attr("src", "img/arrowBPActive.png");
       }
 
 historyButtons.addEventListener("click", function () {
@@ -144,19 +168,19 @@ historyButtons.addEventListener("click", function () {
     var tabIn2 = historyButtonNext.getAttribute('tabindex');
       if( tabIn == -1){
         // console.log("swiper-button-disabled!");
-        $(".history-image__prev").attr("src", "img/arrowBPrev.png");
+        $(".history__image__prev").attr("src", "img/arrowBPrev.png");
       }
       else {
-        $(".history-image__prev").attr("src", "img/arrowBPActive.png");
+        $(".history__image__prev").attr("src", "img/arrowBPActive.png");
       }
 
       var tabIn2 = historyButtonNext.getAttribute('tabindex');
       if( tabIn2 == -1){
         // console.log("swiper-button-disabled!");
-        $(".history-image__next").attr("src", "img/arrowBNext.png");
+        $(".history__image__next").attr("src", "img/arrowBNext.png");
       }
       else {
-        $(".history-image__next").attr("src", "img/arrowBNActive.png");
+        $(".history__image__next").attr("src", "img/arrowBNActive.png");
       }     
   });
 
