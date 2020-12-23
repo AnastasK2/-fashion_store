@@ -23,29 +23,29 @@
             />
           </a>
           <div class="header__block">
-            <nav class="header-menu header-menu--mobile--visible">
+            <nav class="header-menu header-menu--mobile--visible" id="menu">
               <a
-                href="#"
+                href="#yak1"
                 class="header-menu__link header-menu__link--mobile--visible"
                 >Главная</a
               >
               <a
-                href="#"
+                href="#yak2"
                 class="header-menu__link header-menu__link--mobile--visible"
                 >Новинки</a
               >
               <a
-                href="#"
+                href="#yak3"
                 class="header-menu__link header-menu__link--mobile--visible"
                 >Тренды</a
               >
               <a
-                href="#"
+                href="#yak4"
                 class="header-menu__link header-menu__link--mobile--visible"
                 >Отзывы</a
               >
               <a
-                href="#"
+                href="#yak5"
                 class="header-menu__link header-menu__link--mobile--visible"
                 >Контакты</a
               >
@@ -68,6 +68,7 @@
       </div>
       <!-- /.container -->
     </header>
+
     <section class="mainpage mainpage--thankyou">
       <div class="container">
         <div class="mainpage-info mainpage-info--thankyou">
@@ -76,8 +77,10 @@
             Всю информацию о новых коллекциях, распродажах <br />
             и скидках мы пришлем на указанную почту.
           </h2>
-          <a href="index.html" class="mainpage-info__button--thankyou">
-            <button class="button mainpage-info__button">
+          <a href="index.html" class="mainpage-info__link--thankyou">
+            <button
+              class="button mainpage-info__button mainpage-info__button--thankyou"
+            >
               Вернуться на главную
             </button>
           </a>
@@ -91,40 +94,64 @@
         <div class="footer__grid">
           <div class="footer-info">
             <div class="footer__image">
-              <a href="#"
-                ><img src="img/Logo.png" alt="" class="footer-info__logo"
+              <a href="index.html"
+                ><img
+                  src="img/Logo.png"
+                  alt=""
+                  class="footer-info__logo"
+                  loading="lazy"
               /></a>
             </div>
             <span class="footer-info__text"
               >Интернет-магазин брендовой одежды с оплатой онлайн</span
             >
             <div class="footer-info__social-links">
-              <a href="" class="footer-info__soclial-link">
+              <a
+                href="https://www.google.com/intl/ru/gmail/about/"
+                class="footer-info__soclial-link"
+                target="_blank"
+              >
                 <img
                   src="img/gmail.png"
                   alt=""
                   class="footer-info__social-item"
+                  loading="lazy"
               /></a>
               <!-- /.footer-info__soclial-link -->
-              <a href="" class="footer-info__soclial-link">
+              <a
+                href="https://twitter.com/"
+                class="footer-info__soclial-link"
+                target="_blank"
+              >
                 <img
                   src="img/twitter.png"
                   alt=""
                   class="footer-info__social-item"
+                  loading="lazy"
               /></a>
               <!-- /.footer-info__soclial-link -->
-              <a href="" class="footer-info__soclial-link">
+              <a
+                href="https://www.instagram.com/"
+                class="footer-info__soclial-link"
+                target="_blank"
+              >
                 <img
                   src="img/instagram.png"
                   alt=""
                   class="footer-info__social-item"
+                  loading="lazy"
               /></a>
               <!-- /.footer-info__soclial-link -->
-              <a href="" class="footer-info__soclial-link">
+              <a
+                href="https://www.linkedin.cn/login"
+                class="footer-info__soclial-link"
+                target="_blank"
+              >
                 <img
                   src="img/linkedIn.png"
                   alt=""
                   class="footer-info__social-item"
+                  loading="lazy"
               /></a>
               <!-- /.footer-info__soclial-link -->
             </div>
@@ -132,59 +159,90 @@
           <div class="footer-nav">
             <h4 class="footer__title-links">Навигация</h4>
             <ul class="footer__links footer-nav__links">
-              <li class="footer__item footer-nav__item">Новая коллекция</li>
-              <li class="footer__item footer-nav__item">Трендовая одежда</li>
-              <li class="footer__item footer-nav__item">Истории Fashun</li>
-              <li class="footer__item footer-nav__item">Отзывы клиентов</li>
-              <li class="footer__item footer-nav__item">Вся одежда</li>
+              <li class="footer__item footer-nav__item">
+                <a href="#" class="footer__link"> Новая коллекция </a>
+              </li>
+              <li class="footer__item footer-nav__item">
+                <a href="#" class="footer__link"> Трендовая одежда</a>
+              </li>
+              <li class="footer__item footer-nav__item">
+                <a href="#" class="footer__link"> Истории Fashun </a>
+              </li>
+              <li class="footer__item footer-nav__item">
+                <a href="#" class="footer__link"> Отзывы клиентов </a>
+              </li>
+              <li class="footer__item footer-nav__item">
+                <a href="#" class="footer__link"> Вся одежда</a>
+              </li>
             </ul>
           </div>
           <div class="footer-services">
             <h4 class="footer__title-links">Сервисы</h4>
             <ul class="footer__links footer-services__links">
               <li class="footer__item footer-services__item">
-                Рассрочка на 6 мес
+                <a href="#" class="footer__link">Рассрочка на 6 мес</a>
               </li>
               <li class="footer__item footer-services__item">
-                Кредит на 12 мес
+                <a href="#" class="footer__link"> Кредит на 12 мес</a>
               </li>
-              <li class="footer__item footer-services__item">Доставка по РФ</li>
               <li class="footer__item footer-services__item">
-                Возврат покупок
+                <a href="#" class="footer__link">Доставка по РФ</a>
               </li>
-              <li class="footer__item footer-services__item">Акции и кэшбек</li>
+              <li class="footer__item footer-services__item">
+                <a href="#" class="footer__link">Возврат покупок</a>
+              </li>
+              <li class="footer__item footer-services__item">
+                <a href="#" class="footer__link">Акции и кэшбек</a>
+              </li>
             </ul>
           </div>
+
           <div class="footer-companies">
             <h4 class="footer__title-links">Компания</h4>
             <ul class="footer__links footer-companies__links">
-              <li class="footer__item footer-companies__item">Об Ehya</li>
-              <li class="footer__item footer-companies__item">Правила сайта</li>
               <li class="footer__item footer-companies__item">
-                Обработка данных
+                <a href="#" class="footer__link">Об Ehya</a>
               </li>
-              <li class="footer__item footer-companies__item">Вакансии</li>
+              <li class="footer__item footer-companies__item">
+                <a href="#" class="footer__link">Правила сайта</a>
+              </li>
+              <li class="footer__item footer-companies__item">
+                <a href="#" class="footer__link">Обработка данных</a>
+              </li>
+              <li class="footer__item footer-companies__item">
+                <a href="#" class="footer__link">Вакансии</a>
+              </li>
             </ul>
           </div>
+
           <div class="footer-contacts">
             <h4 class="footer__title-links">Контакты</h4>
             <ul class="footer__links footer-contacts__links">
-              <li class="footer__item footer-contacts__item">Группа Фейсбук</li>
-              <li class="footer__item footer-contacts__item">Канал Youtube</li>
+              <li class="footer__item footer-contacts__item">
+                <a href="#" class="footer__link">Группа Фейсбук</a>
+              </li>
+              <li class="footer__item footer-contacts__item">
+                <a href="#" class="footer__link">Канал Youtube</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+
     <div class="modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
         <a href="#" class="modal__close">
-          <img src="img/close.png" alt="Icon: close" class="modal__image-close"
-        /></a>
+          <img
+            src="img/close.png"
+            alt="Icon: close"
+            class="modal__image-close"
+          />
+        </a>
         <h3 class="modal__title">ВХОД</h3>
-        <form action="sendModal.php" method="POST" class="modal__form">
+        <form action="login.php" method="POST" class="modal__form form">
           <input
             type="email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -194,11 +252,11 @@
             required
           />
           <input
-            type="tel"
-            class="input modal__input phone"
-            placeholder="Password"
+            type="password"
+            class="input modal__input"
+            placeholder="Ваш пароль"
             name="pass"
-            minlength="17"
+            minlength="8"
             required
           />
           <button class="button modal__button">Войти</button>
@@ -206,7 +264,10 @@
       </div>
       <!-- /.modal__dialog -->
     </div>
+    <!-- /.modal -->
+
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
